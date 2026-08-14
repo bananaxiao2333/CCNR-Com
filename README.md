@@ -1,7 +1,20 @@
+<div align="center">
+
+<img src="src/main/resources/icon.png" width="128" height="128" alt="CCNR-Com 图标">
+
 # CCNR-Com 对讲机模组（Forge 1.20.1）
 
 一个对讲机（Walkie Talkie）模组：玩家设定自己的频道后，用 `/r` 和同频道玩家通话；
 联动 [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice)，**按住说话时同频道玩家可以远程听到你的语音**。
+
+[![Release](https://img.shields.io/github/v/release/bananaxiao2333/CCNR-Com?label=Release&color=brightgreen)](https://github.com/bananaxiao2333/CCNR-Com/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/bananaxiao2333/CCNR-Com/build.yml?branch=main&label=Build)](https://github.com/bananaxiao2333/CCNR-Com/actions)
+[![License](https://img.shields.io/github/license/bananaxiao2333/CCNR-Com?label=License)](LICENSE)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-important)](https://www.minecraft.net)
+[![Forge](https://img.shields.io/badge/Forge-47.2.0%2B-orange)](https://files.minecraftforge.net)
+[![Plasmo Voice](https://img.shields.io/badge/Plasmo%20Voice-2.1.13-blueviolet)](https://modrinth.com/plugin/plasmo-voice)
+
+</div>
 
 ## 功能
 
@@ -48,7 +61,10 @@
 
 ## 构建
 
-已配置国内镜像：Gradle 发行版走腾讯云，Maven Central 走阿里云。
+GitHub Actions 已配置自动构建（`push main` / 打 `v*` 标签 / PR），产物自动上传；
+打标签时会自动把 jar 附加到 GitHub Release。
+
+本地构建已配置国内镜像：Gradle 发行版走腾讯云，Maven Central 走阿里云。
 
 需要 JDK 17 或更高（本机示例使用 brew 的 JDK 21）：
 
