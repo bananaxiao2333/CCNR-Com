@@ -1,0 +1,45 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ccnrcom"
+version="${file.jarVersion}"
+displayName="CCNR-Com"
+authors="CCNR"
+logoFile="icon.png"
+credits="Plasmo Voice integration"
+description='''CCNR-Com 对讲机模组 (Forge 1.20.1)
+
+- /channel <频道>  设定自己的频道（数字.数字，如 123.4、462.5625）
+- /channel         查看当前频道
+- /channel clear   退出频道
+- /r <消息>        向同频道所有在线玩家发送对讲机消息
+- 只有频道相同的玩家才能收发；服务端强制校验
+- /a <消息> 管理通讯：仅 OP 或拥有 ccnrcom.admin.chat 权限的玩家可收发（红色名字 + 绿色消息）
+- /o <消息> 场外通讯：灰色[场外通讯] + 黄色玩家名，无视距离全员可见
+- 联动 Plasmo Voice：按住说话时，同频道玩家可以远程听到你的语音（无视距离、全音量）
+- 说话者 HUD（右侧，可配置）：近场/对讲机区分显示，近场优先
+- 服务端和客户端都需要安装本模组（语音联动还需安装 Plasmo Voice）
+- 语言：中文 / English'''
+
+[[dependencies.ccnrcom]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ccnrcom]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ccnrcom]]
+    modId="plasmovoice"
+    mandatory=false
+    versionRange="[2.1.0,3.0.0)"
+    ordering="NONE"
+    side="BOTH"
