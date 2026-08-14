@@ -1,0 +1,15 @@
+{
+  "ccnrcom.channel.current": "Your current channel: %s",
+  "ccnrcom.channel.not_set": "You haven't set a channel. Use /channel <channel>, e.g. /channel 462.5",
+  "ccnrcom.channel.set": "Channel set: %s",
+  "ccnrcom.channel.cleared": "You left the channel. /r is disabled until you set a new channel.",
+  "ccnrcom.channel.invalid": "Invalid channel format. Use digits with a dot, e.g. 123.4 or 462.5625",
+  "ccnrcom.radio.prefix": "[Walkie Talkie %s]",
+  "ccnrcom.radio.usage": "Usage: /r <message>",
+  "ccnrcom.radio.empty": "Message cannot be empty",
+  "ccnrcom.radio.too_long": "Message is too long (max %s characters)",
+  "ccnrcom.command.player_only": "This command can only be used by a player in game",
+  "ccnrcom.voice.talking": "Transmitting · Channel %s",
+  "ccnrcom.voice.talk_end": "Transmission ended",
+  "ccnrcom.voice.no_channel": "No channel set — voice is proximity only"
+}

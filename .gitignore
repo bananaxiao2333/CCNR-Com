@@ -1,0 +1,21 @@
+# Gradle / 构建产物
+.gradle/
+.gradle-home/
+build/
+out/
+bin/
+
+# 游戏运行目录
+run/
+
+# IDE
+.idea/
+*.iml
+eclipse/
+
+# 第三方依赖（Plasmo Voice，运行 scripts/fetch-plasmovoice.sh 获取）与发布产物
+libs/
+release/
+
+# macOS
+.DS_Store
