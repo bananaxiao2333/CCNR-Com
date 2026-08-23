@@ -6,7 +6,6 @@ package com.ccnrcom;
 
 import com.ccnrcom.client.ClientKeybinds;
 import com.ccnrcom.compat.PlasmoVoiceCompat;
-import com.ccnrcom.gui.screen.CommsHudWindow;
 import com.ccnrcom.gui.store.CommsMessageStore;
 import com.ccnrcom.network.ChannelStatePacket;
 import com.ccnrcom.network.CommsChatPacket;
@@ -88,7 +87,6 @@ public class CCNRComMod {
     /** 客户端：初始化 GUI（历史上限、悬浮窗位置） */
     private void clientSetup(FMLClientSetupEvent event) {
         CommsMessageStore.get().setMaxPerBucket(Config.HISTORY_LIMIT.get());
-        CommsHudWindow.init();
     }
 
     private void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {

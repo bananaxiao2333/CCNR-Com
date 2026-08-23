@@ -8,20 +8,19 @@ import com.ccnrcom.CCNRComMod;
 import com.ccnrcom.Config;
 import com.ccnrcom.gui.render.RoundRectRenderer;
 import com.ccnrcom.gui.screen.CommsChatScreen;
-import com.ccnrcom.gui.screen.CommsHudWindow;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import java.util.Locale;
 import net.minecraft.client.Minecraft;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.event.RegisterClientCommandsEvent;
 import net.minecraftforge.client.event.RegisterShadersEvent;
 import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 
 /** 客户端渲染与输入事件（HUD 绘制、按键、客户端命令） */
@@ -78,7 +77,7 @@ public class ClientEvents {
         Config.HUD_ENABLED.set(on);
         Minecraft mc = Minecraft.getInstance();
         if (mc.player != null) {
-            mc.player.displayClientMessage(Component.literal("语音/通讯 HUD: " + (on ? "开" : "关")), false);
+            mc.player.displayClientMessage(Component.literal("语音 HUD: " + (on ? "开" : "关")), false);
         }
         return 1;
     }
@@ -93,43 +92,11 @@ public class ClientEvents {
         }
     }
 
-    /** 鼠标：HUD 悬浮窗拖拽/折叠 */
-    @SubscribeEvent
-    public static void onMouseButton(InputEvent.MouseButton event) {
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.screen != null) return;
-        CommsHudWindow.handleMouseButton(scaledMouseX(mc), scaledMouseY(mc), event.getAction());
-    }
-
-    /** 滚轮：HUD 悬浮窗内滚动 */
-    @SubscribeEvent
-    public static void onMouseScrolled(InputEvent.MouseScrollingEvent event) {
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.screen != null) return;
-        if (CommsHudWindow.handleScroll(event.getMouseX(), event.getMouseY(), event.getScrollDelta())) {
-            event.setCanceled(true);
-        }
-    }
-
+    /** 语音说话者 HUD（需要 Plasmo Voice） */
     @SubscribeEvent
     public static void onRenderGuiOverlay(RenderGuiOverlayEvent.Post event) {
         if (!event.getOverlay().id().equals(VanillaGuiOverlay.HOTBAR.id())) return;
-        CommsHudWindow.render(
-                event.getGuiGraphics(),
-                (int) scaledMouseX(Minecraft.getInstance()),
-                (int) scaledMouseY(Minecraft.getInstance()),
-                event.getPartialTick());
-    }
-
-    private static double scaledMouseX(Minecraft mc) {
-        return mc.mouseHandler.xpos()
-                * mc.getWindow().getGuiScaledWidth()
-                / mc.getWindow().getScreenWidth();
-    }
-
-    private static double scaledMouseY(Minecraft mc) {
-        return mc.mouseHandler.ypos()
-                * mc.getWindow().getGuiScaledHeight()
-                / mc.getWindow().getScreenHeight();
+        if (!ModList.get().isLoaded("plasmovoice")) return;
+        ClientVoiceHud.render(event.getGuiGraphics(), event.getPartialTick());
     }
 }

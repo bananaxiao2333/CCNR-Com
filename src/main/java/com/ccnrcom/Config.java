@@ -30,11 +30,6 @@ public class Config {
     public static final ForgeConfigSpec.BooleanValue BUBBLE_CHAT;
     /** 本地消息历史上限（每桶） */
     public static final ForgeConfigSpec.IntValue HISTORY_LIMIT;
-    /** HUD 悬浮窗 X（-1 = 自动右上） */
-    public static final ForgeConfigSpec.IntValue HUD_WINDOW_X;
-    /** HUD 悬浮窗 Y（-1 = 自动） */
-    public static final ForgeConfigSpec.IntValue HUD_WINDOW_Y;
-
     /** 语音 HUD 总开关 */
     public static final ForgeConfigSpec.BooleanValue HUD_ENABLED;
     /** HUD 位置：left / right */
@@ -92,8 +87,6 @@ public class Config {
                 .define("bubbleChat", true);
         HISTORY_LIMIT =
                 builder.comment("Max local message history per bucket.").defineInRange("historyLimit", 100, 10, 1000);
-        HUD_WINDOW_X = builder.comment("HUD window X (-1 = auto top-right).").defineInRange("hudWindowX", -1, -1, 4000);
-        HUD_WINDOW_Y = builder.comment("HUD window Y (-1 = auto).").defineInRange("hudWindowY", -1, -1, 4000);
         builder.pop();
 
         builder.push("hud");
