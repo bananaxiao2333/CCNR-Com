@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.client;
 
 import com.ccnrcom.Config;
@@ -59,12 +63,14 @@ public class ClientPacketHandler {
         Component text;
         if (msg.getType() == CommsChatPacket.TYPE_ADMIN) {
             // [名字]: 红色，消息绿色
-            text = Component.literal("[" + msg.getSender() + "]:").withStyle(ChatFormatting.RED)
+            text = Component.literal("[" + msg.getSender() + "]:")
+                    .withStyle(ChatFormatting.RED)
                     .append(Component.literal(" "))
                     .append(Component.literal(msg.getMessage()).withStyle(ChatFormatting.GREEN));
         } else {
             // [场外通讯] 灰色，玩家名: 黄色，消息重置为默认色
-            text = Component.translatable("ccnrcom.ooc.prefix").withStyle(ChatFormatting.GRAY)
+            text = Component.translatable("ccnrcom.ooc.prefix")
+                    .withStyle(ChatFormatting.GRAY)
                     .append(Component.literal(" "))
                     .append(Component.literal(msg.getSender() + ": ").withStyle(ChatFormatting.YELLOW))
                     .append(Component.literal(msg.getMessage()));

@@ -1,7 +1,10 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom;
 
 import com.ccnrcom.compat.PlasmoVoiceCompat;
-import net.minecraftforge.fml.ModList;
 import com.ccnrcom.network.ChannelStatePacket;
 import com.ccnrcom.network.CommsChatPacket;
 import com.ccnrcom.network.RadioReceivePacket;
@@ -13,6 +16,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartedEvent;
 import net.minecraftforge.event.server.ServerStoppingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -33,8 +37,7 @@ public class CCNRComMod {
             new ResourceLocation(MODID, "main"),
             () -> PROTOCOL_VERSION,
             PROTOCOL_VERSION::equals,
-            PROTOCOL_VERSION::equals
-    );
+            PROTOCOL_VERSION::equals);
 
     private PlasmoVoiceCompat voiceCompat;
 
@@ -54,14 +57,26 @@ public class CCNRComMod {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         int id = 0;
-        CHANNEL.registerMessage(id++, RadioReceivePacket.class,
-                RadioReceivePacket::encode, RadioReceivePacket::decode, RadioReceivePacket::handle);
-        CHANNEL.registerMessage(id++, VoiceFeedbackPacket.class,
-                VoiceFeedbackPacket::encode, VoiceFeedbackPacket::decode, VoiceFeedbackPacket::handle);
-        CHANNEL.registerMessage(id++, CommsChatPacket.class,
-                CommsChatPacket::encode, CommsChatPacket::decode, CommsChatPacket::handle);
-        CHANNEL.registerMessage(id++, ChannelStatePacket.class,
-                ChannelStatePacket::encode, ChannelStatePacket::decode, ChannelStatePacket::handle);
+        CHANNEL.registerMessage(
+                id++,
+                RadioReceivePacket.class,
+                RadioReceivePacket::encode,
+                RadioReceivePacket::decode,
+                RadioReceivePacket::handle);
+        CHANNEL.registerMessage(
+                id++,
+                VoiceFeedbackPacket.class,
+                VoiceFeedbackPacket::encode,
+                VoiceFeedbackPacket::decode,
+                VoiceFeedbackPacket::handle);
+        CHANNEL.registerMessage(
+                id++, CommsChatPacket.class, CommsChatPacket::encode, CommsChatPacket::decode, CommsChatPacket::handle);
+        CHANNEL.registerMessage(
+                id++,
+                ChannelStatePacket.class,
+                ChannelStatePacket::encode,
+                ChannelStatePacket::decode,
+                ChannelStatePacket::handle);
     }
 
     private void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {

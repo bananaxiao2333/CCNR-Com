@@ -1,15 +1,18 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.network;
 
 import com.ccnrcom.client.ClientPacketHandler;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.network.NetworkEvent;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.function.Supplier;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.network.NetworkEvent;
 
 /** S2C：我频道上的成员列表（供 HUD 区分对讲机/近场语音） */
 public class ChannelStatePacket {
@@ -36,10 +39,13 @@ public class ChannelStatePacket {
     }
 
     public static void handle(ChannelStatePacket msg, Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> DistExecutor.unsafeRunWhenOn(
-                Dist.CLIENT, () -> () -> ClientPacketHandler.handleChannelState(msg)));
+        ctx.get()
+                .enqueueWork(() -> DistExecutor.unsafeRunWhenOn(
+                        Dist.CLIENT, () -> () -> ClientPacketHandler.handleChannelState(msg)));
         ctx.get().setPacketHandled(true);
     }
 
-    public List<UUID> getMembers() { return members; }
+    public List<UUID> getMembers() {
+        return members;
+    }
 }

@@ -1,12 +1,15 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.network;
 
 import com.ccnrcom.client.ClientPacketHandler;
+import java.util.function.Supplier;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.network.NetworkEvent;
-
-import java.util.function.Supplier;
 
 /** S2C：管理通讯 / 场外通讯消息 */
 public class CommsChatPacket {
@@ -34,12 +37,21 @@ public class CommsChatPacket {
     }
 
     public static void handle(CommsChatPacket msg, Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> DistExecutor.unsafeRunWhenOn(
-                Dist.CLIENT, () -> () -> ClientPacketHandler.handleCommsChat(msg)));
+        ctx.get()
+                .enqueueWork(() -> DistExecutor.unsafeRunWhenOn(
+                        Dist.CLIENT, () -> () -> ClientPacketHandler.handleCommsChat(msg)));
         ctx.get().setPacketHandled(true);
     }
 
-    public int getType() { return type; }
-    public String getSender() { return sender; }
-    public String getMessage() { return message; }
+    public int getType() {
+        return type;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public String getMessage() {
+        return message;
+    }
 }

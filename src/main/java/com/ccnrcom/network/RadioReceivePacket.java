@@ -1,12 +1,15 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.network;
 
 import com.ccnrcom.client.ClientPacketHandler;
+import java.util.function.Supplier;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.network.NetworkEvent;
-
-import java.util.function.Supplier;
 
 /** S2C：服务器把一条对讲机消息推送给同频道的客户端 */
 public class RadioReceivePacket {
@@ -31,12 +34,21 @@ public class RadioReceivePacket {
     }
 
     public static void handle(RadioReceivePacket msg, Supplier<NetworkEvent.Context> ctx) {
-        ctx.get().enqueueWork(() -> DistExecutor.unsafeRunWhenOn(
-                Dist.CLIENT, () -> () -> ClientPacketHandler.handle(msg)));
+        ctx.get()
+                .enqueueWork(
+                        () -> DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> ClientPacketHandler.handle(msg)));
         ctx.get().setPacketHandled(true);
     }
 
-    public String getChannel() { return channel; }
-    public String getSenderName() { return senderName; }
-    public String getMessage() { return message; }
+    public String getChannel() {
+        return channel;
+    }
+
+    public String getSenderName() {
+        return senderName;
+    }
+
+    public String getMessage() {
+        return message;
+    }
 }

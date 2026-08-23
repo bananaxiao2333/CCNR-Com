@@ -1,9 +1,14 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.compat;
 
 import com.ccnrcom.CCNRComMod;
 import com.ccnrcom.ChannelManager;
 import com.ccnrcom.Config;
 import com.ccnrcom.network.VoiceFeedbackPacket;
+import java.util.UUID;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.PacketDistributor;
@@ -27,8 +32,6 @@ import su.plo.voice.proto.packets.tcp.clientbound.SourceInfoPacket;
 import su.plo.voice.proto.packets.udp.clientbound.SourceAudioPacket;
 import su.plo.voice.server.ModVoiceServer;
 
-import java.util.UUID;
-
 /**
  * Plasmo Voice 联动（以 PV Addon 形式注册，PV 自动管理生命周期）。
  *
@@ -39,8 +42,13 @@ import java.util.UUID;
  *
  * 只有安装了 Plasmo Voice 时本类才会被加载（由 CCNRComMod 在 ModList 判断后实例化）。
  */
-@Addon(id = "ccnrcom", name = "CCNR-Com", scope = AddonLoaderScope.ANY_SERVER,
-        version = "1.0.0", authors = {"CCNR"}, dependencies = {})
+@Addon(
+        id = "ccnrcom",
+        name = "CCNR-Com",
+        scope = AddonLoaderScope.ANY_SERVER,
+        version = "1.0.0",
+        authors = {"CCNR"},
+        dependencies = {})
 public class PlasmoVoiceCompat implements AddonInitializer {
 
     private static final Logger LOGGER = LogManager.getLogger();
@@ -103,13 +111,19 @@ public class PlasmoVoiceCompat implements AddonInitializer {
             // 客户端音量按 实际距离/包距离 计算，包距离必须大于实际距离才能听到；
             // 这里按收听者距离放大（short 上限 32767），实现近满音量远程对讲
             conn.sendPacket(new SourceAudioPacket(
-                    packet.getSequenceNumber(), packet.getSourceState(),
-                    packet.getData(), packet.getSourceId(), radioDistance()));
+                    packet.getSequenceNumber(),
+                    packet.getSourceState(),
+                    packet.getData(),
+                    packet.getSourceId(),
+                    radioDistance()));
             forwarded++;
         }
         if (forwarded > 0 && (++forwardCounter % 50) == 0) {
-            LOGGER.info("[CCNR-Com] radio voice: forwarding from {} to {} listeners on channel {}",
-                    speakerId, forwarded, channel);
+            LOGGER.info(
+                    "[CCNR-Com] radio voice: forwarding from {} to {} listeners on channel {}",
+                    speakerId,
+                    forwarded,
+                    channel);
         }
     }
 
@@ -119,8 +133,8 @@ public class PlasmoVoiceCompat implements AddonInitializer {
         if (voiceServer == null) return;
         if (!Config.VOICE_ENABLED.get()) return;
         if (!(event.getSource() instanceof ServerPlayerSource)) return;
-        if (!(event.getPacket() instanceof SourceInfoPacket)
-                && !(event.getPacket() instanceof SourceAudioEndPacket)) return;
+        if (!(event.getPacket() instanceof SourceInfoPacket) && !(event.getPacket() instanceof SourceAudioEndPacket))
+            return;
 
         ServerPlayerSource source = (ServerPlayerSource) event.getSource();
         VoiceServerPlayer speaker = source.getPlayer();
@@ -170,8 +184,7 @@ public class PlasmoVoiceCompat implements AddonInitializer {
         MinecraftServer server = sp.getServer();
         if (server == null) return;
         server.execute(() -> CCNRComMod.CHANNEL.send(
-                PacketDistributor.PLAYER.with(() -> sp),
-                new VoiceFeedbackPacket(key, arg, pitch)));
+                PacketDistributor.PLAYER.with(() -> sp), new VoiceFeedbackPacket(key, arg, pitch)));
     }
 
     /**
@@ -191,8 +204,7 @@ public class PlasmoVoiceCompat implements AddonInitializer {
         ServerPos3d listenerPos = new ServerPos3d();
         listener.getInstance().getServerPosition(listenerPos);
 
-        boolean sameWorld = sourcePos.getWorld() != null
-                && sourcePos.getWorld().equals(listenerPos.getWorld());
+        boolean sameWorld = sourcePos.getWorld() != null && sourcePos.getWorld().equals(listenerPos.getWorld());
         if (!sameWorld) {
             return Config.CROSS_DIMENSION.get();
         }

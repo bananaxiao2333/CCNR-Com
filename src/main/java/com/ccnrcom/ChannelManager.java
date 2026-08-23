@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom;
 
 import java.util.Map;
@@ -18,7 +22,9 @@ public class ChannelManager {
     public static boolean isValid(String channel) {
         if (channel == null) return false;
         try {
-            return Pattern.compile(Config.CHANNEL_PATTERN.get()).matcher(channel).matches();
+            return Pattern.compile(Config.CHANNEL_PATTERN.get())
+                    .matcher(channel)
+                    .matches();
         } catch (Exception e) {
             return false;
         }

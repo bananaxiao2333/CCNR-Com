@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom;
 
 import com.ccnrcom.network.CommsChatPacket;
@@ -5,17 +9,16 @@ import com.ccnrcom.network.RadioReceivePacket;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import java.util.Collection;
+import java.util.UUID;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
-import net.minecraft.network.chat.Component;
 import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.network.PacketDistributor;
-
-import java.util.Collection;
-import java.util.UUID;
 
 public class ModCommands {
 
@@ -27,21 +30,23 @@ public class ModCommands {
                 .executes(ctx -> showChannel(ctx.getSource()))
                 .then(Commands.literal("set")
                         .then(Commands.argument("channel", StringArgumentType.word())
-                                .executes(ctx -> setChannel(ctx.getSource(), StringArgumentType.getString(ctx, "channel"))))
+                                .executes(ctx ->
+                                        setChannel(ctx.getSource(), StringArgumentType.getString(ctx, "channel"))))
                         .then(Commands.argument("player", EntityArgument.players())
                                 .then(Commands.argument("channel", StringArgumentType.word())
-                                        .executes(ctx -> setChannelOther(ctx.getSource(),
+                                        .executes(ctx -> setChannelOther(
+                                                ctx.getSource(),
                                                 EntityArgument.getPlayers(ctx, "player"),
                                                 StringArgumentType.getString(ctx, "channel"))))))
                 .then(Commands.literal("clear")
                         .executes(ctx -> clearChannel(ctx.getSource()))
                         .then(Commands.argument("player", EntityArgument.players())
-                                .executes(ctx -> clearChannelOther(ctx.getSource(),
-                                        EntityArgument.getPlayers(ctx, "player")))))
+                                .executes(ctx ->
+                                        clearChannelOther(ctx.getSource(), EntityArgument.getPlayers(ctx, "player")))))
                 .then(Commands.literal("get")
                         .then(Commands.argument("player", EntityArgument.players())
-                                .executes(ctx -> getChannelOther(ctx.getSource(),
-                                        EntityArgument.getPlayers(ctx, "player")))))
+                                .executes(ctx ->
+                                        getChannelOther(ctx.getSource(), EntityArgument.getPlayers(ctx, "player")))))
                 .then(Commands.argument("channel", StringArgumentType.word())
                         .executes(ctx -> setChannel(ctx.getSource(), StringArgumentType.getString(ctx, "channel")))));
 
@@ -87,11 +92,13 @@ public class ModCommands {
     private static int showChannel(CommandSourceStack source) {
         ServerPlayer player = playerOrFail(source);
         if (player == null) return 0;
-        ChannelManager.get(player.getUUID()).ifPresentOrElse(
-                channel -> source.sendSuccess(
-                        () -> Component.translatable("ccnrcom.channel.current", channel)
-                                .withStyle(ChatFormatting.GREEN), false),
-                () -> source.sendFailure(Component.translatable("ccnrcom.channel.not_set")));
+        ChannelManager.get(player.getUUID())
+                .ifPresentOrElse(
+                        channel -> source.sendSuccess(
+                                () -> Component.translatable("ccnrcom.channel.current", channel)
+                                        .withStyle(ChatFormatting.GREEN),
+                                false),
+                        () -> source.sendFailure(Component.translatable("ccnrcom.channel.not_set")));
         return 1;
     }
 
@@ -132,7 +139,8 @@ public class ModCommands {
         String trimmed = validateMessage(source, message);
         if (trimmed == null) return 0;
 
-        RadioReceivePacket packet = new RadioReceivePacket(channel, player.getGameProfile().getName(), trimmed);
+        RadioReceivePacket packet =
+                new RadioReceivePacket(channel, player.getGameProfile().getName(), trimmed);
 
         int range = Config.CHAT_RANGE.get();
         boolean crossDim = Config.CROSS_DIMENSION.get();
@@ -143,7 +151,8 @@ public class ModCommands {
             if (!ChannelManager.isOnChannel(p.getUUID(), channel)) continue;
             if (!echo && p.getUUID().equals(playerId)) continue;
             if (!crossDim && p.level().dimension() != player.level().dimension()) continue;
-            if (range >= 0 && p.level().dimension() == player.level().dimension()
+            if (range >= 0
+                    && p.level().dimension() == player.level().dimension()
                     && p.distanceToSqr(player) > (double) range * (double) range) continue;
             CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> p), packet);
         }
@@ -161,13 +170,14 @@ public class ModCommands {
         String adminName = admin.getGameProfile().getName();
         for (ServerPlayer target : targets) {
             ChannelManager.set(target.getUUID(), channel);
-            target.sendSystemMessage(Component.translatable("ccnrcom.channel.changed_by_admin",
-                    adminName, channel).withStyle(ChatFormatting.YELLOW));
+            target.sendSystemMessage(Component.translatable("ccnrcom.channel.changed_by_admin", adminName, channel)
+                    .withStyle(ChatFormatting.YELLOW));
         }
         ChannelSync.syncAll(source.getServer());
         source.sendSuccess(
-                () -> Component.translatable("ccnrcom.channel.set_other_count",
-                        targets.size(), channel).withStyle(ChatFormatting.GREEN), false);
+                () -> Component.translatable("ccnrcom.channel.set_other_count", targets.size(), channel)
+                        .withStyle(ChatFormatting.GREEN),
+                false);
         return 1;
     }
 
@@ -178,13 +188,14 @@ public class ModCommands {
         String adminName = admin.getGameProfile().getName();
         for (ServerPlayer target : targets) {
             ChannelManager.clear(target.getUUID());
-            target.sendSystemMessage(Component.translatable("ccnrcom.channel.cleared_by_admin",
-                    adminName).withStyle(ChatFormatting.YELLOW));
+            target.sendSystemMessage(Component.translatable("ccnrcom.channel.cleared_by_admin", adminName)
+                    .withStyle(ChatFormatting.YELLOW));
         }
         ChannelSync.syncAll(source.getServer());
         source.sendSuccess(
-                () -> Component.translatable("ccnrcom.channel.cleared_other_count",
-                        targets.size()).withStyle(ChatFormatting.YELLOW), false);
+                () -> Component.translatable("ccnrcom.channel.cleared_other_count", targets.size())
+                        .withStyle(ChatFormatting.YELLOW),
+                false);
         return 1;
     }
 
@@ -193,12 +204,14 @@ public class ModCommands {
         if (adminOrFail(source) == null) return 0;
         for (ServerPlayer target : targets) {
             String name = target.getGameProfile().getName();
-            ChannelManager.get(target.getUUID()).ifPresentOrElse(
-                    channel -> source.sendSuccess(
-                            () -> Component.translatable("ccnrcom.channel.get_other",
-                                    name, channel).withStyle(ChatFormatting.GREEN), false),
-                    () -> source.sendFailure(Component.translatable("ccnrcom.channel.get_other_not_set",
-                            name)));
+            ChannelManager.get(target.getUUID())
+                    .ifPresentOrElse(
+                            channel -> source.sendSuccess(
+                                    () -> Component.translatable("ccnrcom.channel.get_other", name, channel)
+                                            .withStyle(ChatFormatting.GREEN),
+                                    false),
+                            () -> source.sendFailure(
+                                    Component.translatable("ccnrcom.channel.get_other_not_set", name)));
         }
         return 1;
     }
@@ -224,8 +237,8 @@ public class ModCommands {
         String trimmed = validateMessage(source, message);
         if (trimmed == null) return 0;
 
-        CommsChatPacket packet = new CommsChatPacket(CommsChatPacket.TYPE_ADMIN,
-                player.getGameProfile().getName(), trimmed);
+        CommsChatPacket packet = new CommsChatPacket(
+                CommsChatPacket.TYPE_ADMIN, player.getGameProfile().getName(), trimmed);
         for (ServerPlayer p : source.getServer().getPlayerList().getPlayers()) {
             if (Permissions.canAdmin(p)) {
                 CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> p), packet);
@@ -241,8 +254,8 @@ public class ModCommands {
         String trimmed = validateMessage(source, message);
         if (trimmed == null) return 0;
 
-        CommsChatPacket packet = new CommsChatPacket(CommsChatPacket.TYPE_OOC,
-                player.getGameProfile().getName(), trimmed);
+        CommsChatPacket packet = new CommsChatPacket(
+                CommsChatPacket.TYPE_OOC, player.getGameProfile().getName(), trimmed);
         for (ServerPlayer p : source.getServer().getPlayerList().getPlayers()) {
             CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> p), packet);
         }

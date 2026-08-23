@@ -1,13 +1,16 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom;
 
 import com.ccnrcom.network.ChannelStatePacket;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraftforge.network.PacketDistributor;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraftforge.network.PacketDistributor;
 
 /** 把每个在线玩家的"频道成员列表"同步给对应客户端（HUD 区分对讲机/近场语音用） */
 public class ChannelSync {
@@ -31,7 +34,6 @@ public class ChannelSync {
                 }
             }
         }
-        CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> player),
-                new ChannelStatePacket(members));
+        CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> player), new ChannelStatePacket(members));
     }
 }
