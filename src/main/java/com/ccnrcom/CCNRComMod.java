@@ -4,7 +4,10 @@
  */
 package com.ccnrcom;
 
+import com.ccnrcom.client.ClientKeybinds;
 import com.ccnrcom.compat.PlasmoVoiceCompat;
+import com.ccnrcom.gui.screen.CommsHudWindow;
+import com.ccnrcom.gui.store.CommsMessageStore;
 import com.ccnrcom.network.ChannelStatePacket;
 import com.ccnrcom.network.CommsChatPacket;
 import com.ccnrcom.network.RadioReceivePacket;
@@ -20,6 +23,7 @@ import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkRegistry;
@@ -45,6 +49,8 @@ public class CCNRComMod {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         modBus.addListener(this::commonSetup);
+        modBus.addListener(this::clientSetup);
+        modBus.addListener(ClientKeybinds::register);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(ModCommands::register);
@@ -77,6 +83,12 @@ public class CCNRComMod {
                 ChannelStatePacket::encode,
                 ChannelStatePacket::decode,
                 ChannelStatePacket::handle);
+    }
+
+    /** 客户端：初始化 GUI（历史上限、悬浮窗位置） */
+    private void clientSetup(FMLClientSetupEvent event) {
+        CommsMessageStore.get().setMaxPerBucket(Config.HISTORY_LIMIT.get());
+        CommsHudWindow.init();
     }
 
     private void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {

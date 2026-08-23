@@ -5,10 +5,13 @@
 package com.ccnrcom.client;
 
 import com.ccnrcom.Config;
+import com.ccnrcom.chat.CommsMessage;
+import com.ccnrcom.gui.store.CommsMessageStore;
 import com.ccnrcom.network.ChannelStatePacket;
 import com.ccnrcom.network.CommsChatPacket;
 import com.ccnrcom.network.RadioReceivePacket;
 import com.ccnrcom.network.VoiceFeedbackPacket;
+import java.util.UUID;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -16,7 +19,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-/** 仅客户端：收到对讲机消息后在聊天栏显示并播放提示音 */
+/** 仅客户端：处理服务端推送的各类消息 */
 @OnlyIn(Dist.CLIENT)
 public class ClientPacketHandler {
     public static void handle(RadioReceivePacket msg) {
@@ -29,6 +32,9 @@ public class ClientPacketHandler {
                 .append(Component.literal(msg.getSenderName() + ": ").withStyle(ChatFormatting.WHITE))
                 .append(Component.literal(msg.getMessage()).withStyle(ChatFormatting.AQUA));
         mc.player.displayClientMessage(text, false);
+        CommsMessageStore.get()
+                .add(CommsMessage.radio(
+                        msg.getChannel(), resolveSenderId(msg.getSenderName()), msg.getSenderName(), msg.getMessage()));
         if (Config.BEEP_ON_RECEIVE.get()) {
             mc.player.playSound(SoundEvents.NOTE_BLOCK_PLING.value(), 0.5F, 1.8F);
         }
@@ -47,11 +53,6 @@ public class ClientPacketHandler {
         if (msg.getPitch() > 0F) {
             mc.player.playSound(SoundEvents.NOTE_BLOCK_PLING.value(), 0.6F, msg.getPitch());
         }
-    }
-
-    /** 频道成员状态更新 */
-    public static void handleChannelState(ChannelStatePacket msg) {
-        ClientChannelState.setMembers(new java.util.HashSet<>(msg.getMembers()));
     }
 
     /** 管理通讯 / 场外通讯消息 */
@@ -76,5 +77,29 @@ public class ClientPacketHandler {
                     .append(Component.literal(msg.getMessage()));
         }
         mc.player.displayClientMessage(text, false);
+        UUID senderId = resolveSenderId(msg.getSender());
+        if (msg.getType() == CommsChatPacket.TYPE_ADMIN) {
+            CommsMessageStore.get().add(CommsMessage.admin(senderId, msg.getSender(), msg.getMessage()));
+        } else {
+            CommsMessageStore.get().add(CommsMessage.ooc(senderId, msg.getSender(), msg.getMessage()));
+        }
+    }
+
+    /** 频道成员状态更新 */
+    public static void handleChannelState(ChannelStatePacket msg) {
+        ClientChannelState.setState(msg.getMyChannel(), new java.util.LinkedHashMap<>(msg.getMembers()));
+    }
+
+    /** 根据玩家名找 UUID（仅本地显示用，找不到就随机） */
+    private static UUID resolveSenderId(String name) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.level != null) {
+            for (var p : mc.level.players()) {
+                if (p.getGameProfile().getName().equals(name)) {
+                    return p.getUUID();
+                }
+            }
+        }
+        return UUID.randomUUID();
     }
 }
