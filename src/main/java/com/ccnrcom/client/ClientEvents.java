@@ -22,7 +22,6 @@ import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 
 /** 客户端渲染与输入事件（HUD 绘制、按键、客户端命令） */
@@ -115,8 +114,6 @@ public class ClientEvents {
     @SubscribeEvent
     public static void onRenderGuiOverlay(RenderGuiOverlayEvent.Post event) {
         if (!event.getOverlay().id().equals(VanillaGuiOverlay.HOTBAR.id())) return;
-        if (!ModList.get().isLoaded("plasmovoice")) return;
-        ClientVoiceHud.render(event.getGuiGraphics(), event.getPartialTick());
         CommsHudWindow.render(
                 event.getGuiGraphics(),
                 (int) scaledMouseX(Minecraft.getInstance()),
