@@ -1,7 +1,19 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.client;
 
 import com.ccnrcom.Config;
+import com.ccnrcom.gui.render.RoundRectRenderer;
+import com.ccnrcom.gui.theme.CommsTheme;
 import com.mojang.blaze3d.vertex.PoseStack;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraftforge.api.distmarker.Dist;
@@ -9,13 +21,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import su.plo.voice.api.client.audio.source.ClientAudioSource;
 import su.plo.voice.client.ModVoiceClient;
 import su.plo.voice.proto.data.audio.source.PlayerSourceInfo;
-
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 语音说话者 HUD（屏幕侧边）。
@@ -67,9 +72,7 @@ public class ClientVoiceHud {
         if (entries.isEmpty()) return;
 
         // 近场语音优先显示（排前面），对讲机排后面；超出上限时优先保留近场
-        entries.sort(Comparator
-                .comparing((Entry e) -> e.radio ? 1 : 0)
-                .thenComparing(e -> e.name));
+        entries.sort(Comparator.comparing((Entry e) -> e.radio ? 1 : 0).thenComparing(e -> e.name));
         int max = Config.HUD_MAX_ENTRIES.get();
         if (entries.size() > max) {
             entries = new ArrayList<>(entries.subList(0, max));
@@ -107,15 +110,12 @@ public class ClientVoiceHud {
             int color = (alpha << 24) | (rr << 16) | (gg << 8) | bb;
 
             // 对讲机条目：名字后加标签（近场没有）
-            String text = e.radio
-                    ? e.name + " " + radioLabel.getString()
-                    : e.name;
+            String text = e.radio ? e.name + " " + radioLabel.getString() : e.name;
             int w = mc.font.width(text) + 12;
             int h = 14;
             int drawX = (int) (anchorX / scale) - (left ? 0 : w);
-            guiGraphics.fill(drawX, y, drawX + w, y + h, color);
-            guiGraphics.drawString(mc.font, text, drawX + 6, y + 3,
-                    e.radio ? 0xFFE8E8E8 : 0xFFFFFFFF);
+            RoundRectRenderer.fill(guiGraphics, drawX, y, drawX + w, y + h, CommsTheme.RADIUS_MEDIUM, color);
+            guiGraphics.drawString(mc.font, text, drawX + 6, y + 3, e.radio ? 0xFFE8E8E8 : 0xFFFFFFFF);
             y += h + 2;
         }
 

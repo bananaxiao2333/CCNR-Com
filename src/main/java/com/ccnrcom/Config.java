@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom;
 
 import net.minecraftforge.common.ForgeConfigSpec;
@@ -19,6 +23,9 @@ public class Config {
     public static final ForgeConfigSpec.BooleanValue BEEP_ON_RECEIVE;
     /** 开麦/关麦时在 ActionBar 显示状态反馈 */
     public static final ForgeConfigSpec.BooleanValue ACTION_BAR_FEEDBACK;
+
+    /** GUI 主题：auto / light / dark */
+    public static final ForgeConfigSpec.ConfigValue<String> THEME_MODE;
 
     /** 语音 HUD 总开关 */
     public static final ForgeConfigSpec.BooleanValue HUD_ENABLED;
@@ -46,62 +53,48 @@ public class Config {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
         builder.push("chat");
-        MAX_MESSAGE_LENGTH = builder
-                .comment("The maximum length of a radio message (/r <message>).")
+        MAX_MESSAGE_LENGTH = builder.comment("The maximum length of a radio message (/r <message>).")
                 .defineInRange("maxMessageLength", 256, 1, 1024);
-        CHANNEL_PATTERN = builder
-                .comment("Regex pattern for valid radio channels (must include ^ and $).")
+        CHANNEL_PATTERN = builder.comment("Regex pattern for valid radio channels (must include ^ and $).")
                 .define("channelPattern", "^\\d{1,4}\\.\\d{1,4}$");
-        CROSS_DIMENSION = builder
-                .comment("Allow sending and receiving across dimensions.")
+        CROSS_DIMENSION = builder.comment("Allow sending and receiving across dimensions.")
                 .define("crossDimension", true);
-        CHAT_RANGE = builder
-                .comment("Max distance in blocks for /r chat delivery. -1 = unlimited.")
+        CHAT_RANGE = builder.comment("Max distance in blocks for /r chat delivery. -1 = unlimited.")
                 .defineInRange("chatRange", -1, -1, 100000000);
-        ECHO_TO_SENDER = builder
-                .comment("Echo the message back to the sender.")
-                .define("echoToSender", true);
+        ECHO_TO_SENDER = builder.comment("Echo the message back to the sender.").define("echoToSender", true);
         builder.pop();
 
         builder.push("voice");
-        VOICE_ENABLED = builder
-                .comment("Enable Plasmo Voice integration: while you talk, players on your channel hear you remotely.")
+        VOICE_ENABLED = builder.comment(
+                        "Enable Plasmo Voice integration: while you talk, players on your channel hear you remotely.")
                 .define("voiceEnabled", true);
-        VOICE_RANGE = builder
-                .comment("Max distance in blocks for radio voice forwarding. -1 = unlimited.")
+        VOICE_RANGE = builder.comment("Max distance in blocks for radio voice forwarding. -1 = unlimited.")
                 .defineInRange("voiceRange", -1, -1, 100000000);
-        BEEP_ON_RECEIVE = builder
-                .comment("Play a beep on the client when receiving a radio message.")
+        BEEP_ON_RECEIVE = builder.comment("Play a beep on the client when receiving a radio message.")
                 .define("beepOnReceive", true);
-        ACTION_BAR_FEEDBACK = builder
-                .comment("Show action bar feedback (channel, transmitting status) when pushing to talk.")
+        ACTION_BAR_FEEDBACK = builder.comment(
+                        "Show action bar feedback (channel, transmitting status) when pushing to talk.")
                 .define("actionBarFeedback", true);
         builder.pop();
 
+        builder.push("gui");
+        THEME_MODE = builder.comment("GUI theme: auto (follows vanilla dark background), light, dark.")
+                .define("themeMode", "auto");
+        builder.pop();
+
         builder.push("hud");
-        HUD_ENABLED = builder
-                .comment("Show the voice HUD (who is talking) on the side of the screen.")
+        HUD_ENABLED = builder.comment("Show the voice HUD (who is talking) on the side of the screen.")
                 .define("hudEnabled", true);
-        HUD_POSITION = builder
-                .comment("HUD position: left or right.")
-                .define("hudPosition", "right");
-        HUD_OFFSET_X = builder
-                .comment("HUD horizontal offset in pixels.")
-                .defineInRange("hudOffsetX", 4, 0, 400);
-        HUD_OFFSET_Y = builder
-                .comment("HUD vertical offset in pixels.")
-                .defineInRange("hudOffsetY", 8, 0, 400);
-        HUD_SCALE = builder
-                .comment("HUD scale (0.5 ~ 2.0).")
-                .defineInRange("hudScale", 1.0, 0.5, 2.0);
-        HUD_MAX_ENTRIES = builder
-                .comment("Max speakers shown in the HUD at once.")
-                .defineInRange("hudMaxEntries", 8, 1, 12);
-        HUD_COLOR = builder
-                .comment("HUD background base color in RRGGBB (default blue). Saturation grows with voice volume.")
+        HUD_POSITION = builder.comment("HUD position: left or right.").define("hudPosition", "right");
+        HUD_OFFSET_X = builder.comment("HUD horizontal offset in pixels.").defineInRange("hudOffsetX", 4, 0, 400);
+        HUD_OFFSET_Y = builder.comment("HUD vertical offset in pixels.").defineInRange("hudOffsetY", 8, 0, 400);
+        HUD_SCALE = builder.comment("HUD scale (0.5 ~ 2.0).").defineInRange("hudScale", 1.0, 0.5, 2.0);
+        HUD_MAX_ENTRIES =
+                builder.comment("Max speakers shown in the HUD at once.").defineInRange("hudMaxEntries", 8, 1, 12);
+        HUD_COLOR = builder.comment(
+                        "HUD background base color in RRGGBB (default blue). Saturation grows with voice volume.")
                 .define("hudColor", 0x1F6EFF);
-        HUD_MIN_ALPHA = builder
-                .comment("HUD background minimum opacity (0~1); volume level raises it toward 1.")
+        HUD_MIN_ALPHA = builder.comment("HUD background minimum opacity (0~1); volume level raises it toward 1.")
                 .defineInRange("hudMinAlpha", 0.25, 0.0, 1.0);
         builder.pop();
 

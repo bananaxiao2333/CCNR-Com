@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'com.diffplug.spotless' version '6.25.0'
 }
 
 version = mod_version
@@ -61,6 +62,10 @@ dependencies {
     compileOnly "ccnrcom:plasmovoice-forge-1.20.1-2.1.13:2.1.13"
     // 注意：开发环境（runServer/runClient）不会加载 Plasmo Voice
     // （其 mixin 为 SRG 映射，dev 官方映射环境不兼容），联调请在真实服务端验证
+
+    // ---- 测试（JUnit5；离线开发环境不自动跑，显式 `-PrunTests` 才执行） ----
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 jar {
@@ -82,4 +87,19 @@ jar.finalizedBy('reobfJar')
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
     options.release = 17
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    onlyIf { project.hasProperty('runTests') }
+}
+
+spotless {
+    java {
+        target 'src/main/java/**/*.java', 'src/test/java/**/*.java'
+        palantirJavaFormat()
+        licenseHeaderFile 'config/spotless/license-header.txt'
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
 }

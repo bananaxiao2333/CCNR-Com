@@ -1,11 +1,14 @@
+/*
+ * Copyright (c) 2026 CCNR
+ * SPDX-License-Identifier: MIT
+ */
 package com.ccnrcom.client;
-
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.util.Collections;
 import java.util.Set;
 import java.util.UUID;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 /** 客户端缓存的"我频道上的成员"（由 ChannelStatePacket 更新，HUD 区分对讲机/近场） */
 @OnlyIn(Dist.CLIENT)
