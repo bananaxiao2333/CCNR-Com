@@ -108,7 +108,8 @@ public class ChatBubbleScreen extends ChatScreen {
     private long settingsCloseStart, emojiCloseStart, quickCloseStart, searchCloseStart;
 
     // Sidebar — animation state owned by ChatBubbleScreen, rendering delegated to ChatSidebar
-    private static boolean sidebarOpen;
+    // 默认展开左侧列表（聊天/频道列表），点汉堡键可收起
+    private static boolean sidebarOpen = true;
     private boolean sidebarAnimating;
     private boolean sidebarTargetOpen;
     private long sidebarAnimStart;
