@@ -92,7 +92,8 @@ public class Config {
         builder.push("hud");
         HUD_ENABLED = builder.comment("Show the voice HUD (who is talking) on the side of the screen.")
                 .define("hudEnabled", true);
-        HUD_POSITION = builder.comment("HUD position: left or right.").define("hudPosition", "right");
+        HUD_POSITION = builder.comment("HUD position: left or right (top-left corner by default).")
+                .define("hudPosition", "left");
         HUD_OFFSET_X = builder.comment("HUD horizontal offset in pixels.").defineInRange("hudOffsetX", 4, 0, 400);
         HUD_OFFSET_Y = builder.comment("HUD vertical offset in pixels.").defineInRange("hudOffsetY", 8, 0, 400);
         HUD_SCALE = builder.comment("HUD scale (0.5 ~ 2.0).").defineInRange("hudScale", 1.0, 0.5, 2.0);

@@ -70,7 +70,7 @@
 | gui | `bubbleChat` | true | 气泡对话界面总开关 |
 | gui | `historyLimit` | 100 | 每桶本地消息历史上限 |
 | hud | `hudEnabled` | true | 语音说话者 HUD 总开关 |
-| hud | `hudPosition` | right | HUD 位置：left / right |
+| hud | `hudPosition` | left | HUD 位置：left / right（默认左上角） |
 | hud | `hudOffsetX` / `hudOffsetY` | 4 / 8 | HUD 水平/垂直偏移（像素） |
 | hud | `hudScale` | 1.0 | HUD 缩放（0.5~2.0） |
 | hud | `hudMaxEntries` | 8 | HUD 最大显示条数 |
