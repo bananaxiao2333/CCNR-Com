@@ -24,8 +24,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 
-/** 客户端渲染与输入事件（HUD 绘制、按键、客户端命令） */
-@Mod.EventBusSubscriber(modid = CCNRComMod.MODID, value = Dist.CLIENT)
+/**
+ * 客户端渲染与输入事件（HUD 绘制、按键、客户端命令）。
+ * 注意：注册在 Forge 事件总线（Bus.FORGE）——RenderGuiOverlayEvent / TickEvent /
+ * RegisterClientCommandsEvent / RegisterShadersEvent / LivingDeathEvent 均由
+ * MinecraftForge.EVENT_BUS 派发；此前挂在默认 MOD 总线上，语音说话者 HUD、
+ * G 键打开面板、/ccnr 命令等全部失效（E33Chat 的监听器用
+ * MinecraftForge.EVENT_BUS.register 注册所以正常）。
+ */
+@Mod.EventBusSubscriber(modid = CCNRComMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ClientEvents {
 
     /** 注册圆角矩形 shader */
