@@ -163,6 +163,13 @@ public class ChatServerListener {
                         ChatServerConfig.TEMPLATE_DEBUG.get()));
         NetworkHandler.CHANNEL.send(
                 target, new com.niuqu.chatbubble.packets.MediaCapPacket(ChatServerConfig.MEDIA_ENABLED.get()));
+        // 顶部横幅开关：服务端配置优先（默认全关；服务端开启后覆盖客户端设置）
+        NetworkHandler.CHANNEL.send(
+                target,
+                new com.niuqu.chatbubble.packets.BannerConfigSyncPacket(
+                        ChatServerConfig.BANNER_MENTION_ENABLED.get(),
+                        ChatServerConfig.BANNER_WHISPER_ENABLED.get(),
+                        ChatServerConfig.BANNER_SYSTEM_ENABLED.get()));
     }
 
     @SubscribeEvent

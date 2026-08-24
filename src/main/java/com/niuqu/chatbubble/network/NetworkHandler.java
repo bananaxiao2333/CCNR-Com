@@ -98,5 +98,11 @@ public class NetworkHandler {
                 .decoder(com.niuqu.chatbubble.packets.MediaResponsePacket::decode)
                 .consumerMainThread(com.niuqu.chatbubble.packets.MediaResponsePacket::handle)
                 .add();
+
+        CHANNEL.messageBuilder(com.niuqu.chatbubble.packets.BannerConfigSyncPacket.class, 12)
+                .encoder(com.niuqu.chatbubble.packets.BannerConfigSyncPacket::encode)
+                .decoder(com.niuqu.chatbubble.packets.BannerConfigSyncPacket::decode)
+                .consumerMainThread(com.niuqu.chatbubble.packets.BannerConfigSyncPacket::handle)
+                .add();
     }
 }
