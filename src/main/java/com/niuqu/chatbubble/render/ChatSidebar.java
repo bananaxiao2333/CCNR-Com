@@ -47,22 +47,17 @@ public final class ChatSidebar {
         // Public tab
         int y = 2 + SEARCH_H + 3;
         if (mouseY >= y && mouseY <= y + ITEM_H) return true;
-        // Channel list (CCNR-Com 适配)
+        // Channel list (CCNR-Com 适配，活跃频道在前)
         y += ITEM_H + 2;
         String filter = searchBox.getValue().toLowerCase().trim();
         int scrollY = y - scrollOffset;
-        java.util.List<String> targets = new java.util.ArrayList<>();
-        java.util.List<String> labels = new java.util.ArrayList<>();
-        targets.add("*admin");
-        labels.add(Component.translatable("ccnrcom.gui.channel.admin").getString());
-        targets.add("*ooc");
-        labels.add(Component.translatable("ccnrcom.gui.channel.ooc").getString());
-        for (String ch : com.ccnrcom.gui.store.CommsMessageStore.get().knownChannels()) {
-            targets.add(ch);
-            labels.add(ch);
-        }
-        for (int i = 0; i < targets.size(); i++) {
-            String label = labels.get(i);
+        java.util.List<String> targets = channelList();
+        for (String target : targets) {
+            String label = target.equals("*admin")
+                    ? Component.translatable("ccnrcom.gui.channel.admin").getString()
+                    : target.equals("*ooc")
+                            ? Component.translatable("ccnrcom.gui.channel.ooc").getString()
+                            : target;
             if (!filter.isEmpty() && !label.toLowerCase().contains(filter)) continue;
             if (mouseY >= scrollY && mouseY <= scrollY + ITEM_H) return true;
             scrollY += ITEM_H + 2;
@@ -134,29 +129,26 @@ public final class ChatSidebar {
 
         int newMaxScroll = prevMaxScroll;
         // ===== CCNR-Com 适配：侧边栏显示通讯频道（管理/场外/对讲频道），点击即切换发送目标 =====
-        String[] fixedTargets = {"*admin", "*ooc"};
-        String[] fixedLabels = {
-            Component.translatable("ccnrcom.gui.channel.admin").getString(),
-            Component.translatable("ccnrcom.gui.channel.ooc").getString()
-        };
-        java.util.List<String> channels =
-                com.ccnrcom.gui.store.CommsMessageStore.get().knownChannels();
+        // 活跃对讲频道（与当前设定一致）黄色置前，非活跃灰色置底
+        java.util.List<String> channels = channelList();
         String filter = searchBox.getValue().toLowerCase().trim();
+        String myChannel = com.ccnrcom.client.ClientChannelState.getMyChannel();
         int startY = y;
         int visibleBottom = msgBottom > 0 ? msgBottom : 300;
         java.util.List<String> allTargets = new java.util.ArrayList<>();
         java.util.List<String> allLabels = new java.util.ArrayList<>();
-        for (int i = 0; i < fixedTargets.length; i++) {
-            if (filter.isEmpty() || fixedLabels[i].toLowerCase().contains(filter)) {
-                allTargets.add(fixedTargets[i]);
-                allLabels.add(fixedLabels[i]);
+        for (String target : channels) {
+            String label;
+            if (target.equals("*admin")) {
+                label = Component.translatable("ccnrcom.gui.channel.admin").getString();
+            } else if (target.equals("*ooc")) {
+                label = Component.translatable("ccnrcom.gui.channel.ooc").getString();
+            } else {
+                label = Component.translatable("ccnrcom.gui.channel.prefix").getString() + " " + target;
             }
-        }
-        for (String ch : channels) {
-            if (filter.isEmpty() || ch.toLowerCase().contains(filter)) {
-                allTargets.add(ch);
-                allLabels.add(
-                        Component.translatable("ccnrcom.gui.channel.prefix").getString() + " " + ch);
+            if (filter.isEmpty() || label.toLowerCase().contains(filter)) {
+                allTargets.add(target);
+                allLabels.add(label);
             }
         }
         int totalH = allTargets.size() * (ITEM_H + 2);
@@ -190,8 +182,11 @@ public final class ChatSidebar {
                     int maxNameW = WIDTH - nameX - 4 - 2;
                     String displayName = font.plainSubstrByWidth(label, maxNameW - font.width("..."));
                     if (!displayName.equals(label)) displayName += "...";
-                    int labelColor =
-                            target.equals("*admin") ? 0xFFFF5252 : target.equals("*ooc") ? 0xFFB0BEC5 : c.textPrimary();
+                    int labelColor = target.equals("*admin")
+                            ? 0xFFFF5252
+                            : target.equals("*ooc")
+                                    ? 0xFFB0BEC5
+                                    : target.equalsIgnoreCase(myChannel) ? 0xFFFFD54F : c.textMuted();
                     g.drawString(font, Component.literal(displayName), nameX, scrollY + 1, labelColor, false);
 
                     // 该频道最新消息预览
@@ -213,6 +208,23 @@ public final class ChatSidebar {
             g.disableScissor();
         }
         return newMaxScroll;
+    }
+
+    /** CCNR-Com：侧边栏频道列表（管理/场外 + 活跃对讲频道在前，其余按名排序） */
+    public static java.util.List<String> channelList() {
+        java.util.List<String> out = new java.util.ArrayList<>();
+        out.add("*admin");
+        out.add("*ooc");
+        String myChannel = com.ccnrcom.client.ClientChannelState.getMyChannel();
+        java.util.List<String> channels =
+                com.ccnrcom.gui.store.CommsMessageStore.get().knownChannels();
+        for (String ch : channels) {
+            if (ch.equalsIgnoreCase(myChannel) && !out.contains(ch)) out.add(ch);
+        }
+        for (String ch : channels) {
+            if (!ch.equalsIgnoreCase(myChannel) && !out.contains(ch)) out.add(ch);
+        }
+        return out;
     }
 
     /** CCNR-Com：某目标的最新消息预览 */

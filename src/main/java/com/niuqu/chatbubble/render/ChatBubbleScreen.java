@@ -881,13 +881,8 @@ public class ChatBubbleScreen extends ChatScreen {
                 return true;
             }
             y += 22 + 2;
-            // CCNR-Com 适配：频道目标（管理/场外/对讲频道）
-            java.util.List<String> targets = new java.util.ArrayList<>();
-            targets.add("*admin");
-            targets.add("*ooc");
-            for (String ch : com.ccnrcom.gui.store.CommsMessageStore.get().knownChannels()) {
-                targets.add(ch);
-            }
+            // CCNR-Com 适配：频道目标（管理/场外/对讲频道，活跃在前）
+            java.util.List<String> targets = com.niuqu.chatbubble.render.ChatSidebar.channelList();
             String filter = sidebarSearchBox.getValue().toLowerCase().trim();
             int scrollY = y - sidebarScrollOffset;
             for (String target : targets) {
@@ -1321,6 +1316,60 @@ public class ChatBubbleScreen extends ChatScreen {
         contextMsgIndex = -1;
     }
 
+    /** CCNR-Com：按目标过滤本地消息（admin/ooc/指定对讲频道），映射为 E33Chat 消息结构 */
+    private static List<ChatMessageStore.ChatMessage> channelMessages(String target) {
+        List<com.ccnrcom.chat.CommsMessage> src;
+        if (target.equals("*admin")) {
+            src = com.ccnrcom.gui.store.CommsMessageStore.get()
+                    .forBucket(com.ccnrcom.gui.store.CommsMessageStore.BUCKET_ADMIN);
+        } else if (target.equals("*ooc")) {
+            src = com.ccnrcom.gui.store.CommsMessageStore.get()
+                    .forBucket(com.ccnrcom.gui.store.CommsMessageStore.BUCKET_OOC);
+        } else {
+            src = com.ccnrcom.gui.store.CommsMessageStore.get().forBucket("r:" + target);
+        }
+        java.util.UUID me = net.minecraft.client.Minecraft.getInstance().player != null
+                ? net.minecraft.client.Minecraft.getInstance().player.getUUID()
+                : null;
+        List<ChatMessageStore.ChatMessage> out = new ArrayList<>();
+        for (com.ccnrcom.chat.CommsMessage m : src) {
+            out.add(new ChatMessageStore.ChatMessage(
+                    m.getSenderId(),
+                    channelSenderName(m),
+                    net.minecraft.network.chat.Component.literal(m.getText()),
+                    m.getTimestamp(),
+                    me != null && me.equals(m.getSenderId()),
+                    false,
+                    null,
+                    null,
+                    "ccnr|" + m.getType() + "|" + m.getChannel() + "|" + m.getTimestamp() + "|" + m.getSenderName(),
+                    0,
+                    m.getSenderName(),
+                    false,
+                    null));
+        }
+        return out;
+    }
+
+    /** CCNR-Com：频道消息的发送者名样式（对讲青蓝/管理红/场外灰） */
+    private static net.minecraft.network.chat.Component channelSenderName(com.ccnrcom.chat.CommsMessage m) {
+        switch (m.getType()) {
+            case ADMIN:
+                return net.minecraft.network.chat.Component.literal("[" + m.getSenderName() + "]")
+                        .withStyle(net.minecraft.ChatFormatting.RED);
+            case OOC:
+                return net.minecraft.network.chat.Component.translatable("ccnrcom.ooc.prefix")
+                        .withStyle(net.minecraft.ChatFormatting.GRAY)
+                        .append(net.minecraft.network.chat.Component.literal(m.getSenderName() + ": ")
+                                .withStyle(net.minecraft.ChatFormatting.YELLOW));
+            default:
+                return net.minecraft.network.chat.Component.literal("[对讲 " + m.getChannel() + "] ")
+                        .withStyle(net.minecraft.ChatFormatting.YELLOW)
+                        .append(net.minecraft.network.chat.Component.literal(m.getSenderName())
+                                .withStyle(net.minecraft.ChatFormatting.AQUA));
+        }
+    }
+
     /** CCNR-Com：目标是否为通讯频道（管理/场外/对讲频道）而非私聊玩家 */
     private static boolean isChannelTarget(String target) {
         if (target == null) return false;
@@ -1584,6 +1633,8 @@ public class ChatBubbleScreen extends ChatScreen {
         List<ChatMessageStore.ChatMessage> messages;
         if (whisperPartner != null && !isChannelTarget(whisperPartner)) {
             messages = ChatMessageStore.getWhisperMessages(whisperPartner);
+        } else if (isChannelTarget(whisperPartner)) {
+            messages = channelMessages(whisperPartner);
         } else {
             messages = ChatMessageStore.getPublicMessages();
         }
