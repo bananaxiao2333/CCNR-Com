@@ -1367,7 +1367,8 @@ public class ChatBubbleScreen extends ChatScreen {
                         .append(net.minecraft.network.chat.Component.literal(m.getSenderName() + ": ")
                                 .withStyle(net.minecraft.ChatFormatting.YELLOW));
             default:
-                return net.minecraft.network.chat.Component.literal("[对讲 " + m.getChannel() + "] ")
+                return net.minecraft.network.chat.Component.translatable(
+                                "ccnrcom.gui.radio_bubble_name", m.getChannel())
                         .withStyle(net.minecraft.ChatFormatting.YELLOW)
                         .append(net.minecraft.network.chat.Component.literal(m.getSenderName())
                                 .withStyle(net.minecraft.ChatFormatting.AQUA));

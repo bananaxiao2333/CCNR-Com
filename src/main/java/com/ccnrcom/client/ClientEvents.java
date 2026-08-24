@@ -54,15 +54,14 @@ public class ClientEvents {
                                                     .toLowerCase(Locale.ROOT);
                                             if (!mode.equals("auto") && !mode.equals("light") && !mode.equals("dark")) {
                                                 ctx.getSource()
-                                                        .sendFailure(
-                                                                Component.literal("用法: /ccnr theme <auto|light|dark>"));
+                                                        .sendFailure(Component.translatable("ccnrcom.theme.usage"));
                                                 return 0;
                                             }
                                             Config.THEME_MODE.set(mode);
                                             Minecraft mc = Minecraft.getInstance();
                                             if (mc.player != null) {
                                                 mc.player.displayClientMessage(
-                                                        Component.literal("主题已切换: " + mode), false);
+                                                        Component.translatable("ccnrcom.theme.changed", mode), false);
                                             }
                                             return 1;
                                         }))));
@@ -78,7 +77,7 @@ public class ClientEvents {
         Config.HUD_ENABLED.set(on);
         Minecraft mc = Minecraft.getInstance();
         if (mc.player != null) {
-            mc.player.displayClientMessage(Component.literal("语音 HUD: " + (on ? "开" : "关")), false);
+            mc.player.displayClientMessage(Component.translatable(on ? "ccnrcom.hud.on" : "ccnrcom.hud.off"), false);
         }
         return 1;
     }
