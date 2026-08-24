@@ -6,6 +6,7 @@ package com.niuqu.chatbubble;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import com.niuqu.chatbubble.packets.BannerConfigSyncPacket;
 import com.niuqu.chatbubble.packets.ChatMetaPacket;
 import com.niuqu.chatbubble.packets.ConfigSyncPacket;
 import com.niuqu.chatbubble.packets.ConfigSyncV2Packet;
@@ -50,6 +51,14 @@ class PacketCodecTest {
         enc.encode(decoded, b2);
         byte[] after = Arrays.copyOf(b2.array(), b2.writerIndex());
         assertArrayEquals(original, after, "encode(decode(encode(p))) must equal encode(p)");
+    }
+
+    @Test
+    void bannerConfigSyncStable() {
+        assertStable(
+                new BannerConfigSyncPacket(false, true, false),
+                (p, buf) -> BannerConfigSyncPacket.encode((BannerConfigSyncPacket) p, buf),
+                b -> BannerConfigSyncPacket.decode(b));
     }
 
     @Test

@@ -63,7 +63,7 @@ public class MentionNotificationController {
                             SoundEvents.EXPERIENCE_ORB_PICKUP, 0.25f, 0.25f * ChatBubbleConfig.soundVolume()));
         }
 
-        if ((!isOwn || selfNotify) && ChatBubbleConfig.MENTION_BANNER_ENABLED.get()) {
+        if ((!isOwn || selfNotify) && ChatMessageStore.bannerMentionEnabled()) {
             enqueueDeduped(meta.senderUUID(), meta.senderName(), content, messageIndex, type);
         }
     }
@@ -89,7 +89,7 @@ public class MentionNotificationController {
                             SoundEvents.EXPERIENCE_ORB_PICKUP, 0.25f, 0.25f * ChatBubbleConfig.soundVolume()));
         }
 
-        if (notify && ChatBubbleConfig.MENTION_WHISPER_BANNER.get()) {
+        if (notify && ChatMessageStore.bannerWhisperEnabled()) {
             enqueueDeduped(senderUUID, senderName, content, messageIndex, NotificationType.WHISPER);
         }
     }
@@ -98,7 +98,7 @@ public class MentionNotificationController {
     // @/whisper/quote; no sender name — the [系统] label is the name row.
     public void onSystemMessage(Component content, int messageIndex) {
         if (Minecraft.getInstance().player == null) return;
-        if (!ChatBubbleConfig.SYSTEM_BANNER_ENABLED.get()) return;
+        if (!ChatMessageStore.bannerSystemEnabled()) return;
         enqueueDeduped(new UUID(0, 0), Component.empty(), content, messageIndex, NotificationType.SYSTEM);
     }
 

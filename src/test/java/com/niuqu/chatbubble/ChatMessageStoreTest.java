@@ -951,17 +951,23 @@ class ChatMessageStoreTest {
             @Override
             public void onQuoteSound() {}
         });
-        ChatMessageStore.addMessage(
-                net.minecraft.network.chat.Component.literal("死亡消息"),
-                new java.util.UUID(0, 0),
-                net.minecraft.network.chat.Component.literal("系统"),
-                true,
-                "系统",
-                false,
-                null,
-                false);
-        assertEquals(1, calls[0], "system banner enabled (default) must delegate to the observer");
-        ChatMessageStore.setMessageEffectObserver(null);
+        try {
+            // 系统横幅默认关闭；服务端开启（server-first）后应委托给观察者
+            ChatMessageStore.setServerBannerConfig(null, null, true);
+            ChatMessageStore.addMessage(
+                    net.minecraft.network.chat.Component.literal("死亡消息"),
+                    new java.util.UUID(0, 0),
+                    net.minecraft.network.chat.Component.literal("系统"),
+                    true,
+                    "系统",
+                    false,
+                    null,
+                    false);
+            assertEquals(1, calls[0], "server-enabled system banner must delegate to the observer");
+        } finally {
+            ChatMessageStore.setServerBannerConfig(null, null, null);
+            ChatMessageStore.setMessageEffectObserver(null);
+        }
     }
 
     private static void clearMessagesAndMetas() throws Exception {

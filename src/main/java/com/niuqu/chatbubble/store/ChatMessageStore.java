@@ -137,6 +137,36 @@ public class ChatMessageStore {
         return serverTemplateDebug;
     }
 
+    // Server-synced top-banner switches (id 12): null = not synced (singleplayer)
+    // -> client config wins; non-null -> server config overrides the client.
+    private static volatile Boolean serverBannerMention;
+    private static volatile Boolean serverBannerWhisper;
+    private static volatile Boolean serverBannerSystem;
+
+    public static void setServerBannerConfig(Boolean mention, Boolean whisper, Boolean system) {
+        serverBannerMention = mention;
+        serverBannerWhisper = whisper;
+        serverBannerSystem = system;
+    }
+
+    /** 顶部 @提及/引用横幅是否显示：服务端配置优先，未同步时用客户端配置 */
+    public static boolean bannerMentionEnabled() {
+        Boolean s = serverBannerMention;
+        return s != null ? s : ChatBubbleConfig.MENTION_BANNER_ENABLED.get();
+    }
+
+    /** 顶部私聊横幅是否显示：服务端配置优先 */
+    public static boolean bannerWhisperEnabled() {
+        Boolean s = serverBannerWhisper;
+        return s != null ? s : ChatBubbleConfig.MENTION_WHISPER_BANNER.get();
+    }
+
+    /** 顶部系统消息横幅是否显示：服务端配置优先 */
+    public static boolean bannerSystemEnabled() {
+        Boolean s = serverBannerSystem;
+        return s != null ? s : ChatBubbleConfig.SYSTEM_BANNER_ENABLED.get();
+    }
+
     public static void rememberPlayer(UUID uuid, String profileName, String displayName) {
         if (uuid == null || uuid.equals(new UUID(0, 0)) || profileName == null || profileName.isEmpty()) return;
         SeenPlayer existing = seenPlayers.get(uuid);
@@ -537,15 +567,15 @@ public class ChatMessageStore {
         // controller gates on isOwn/selfNotify anyway.
         if (whisper
                 && rawPlayerName != null
-                && ChatBubbleConfig.MENTION_WHISPER_BANNER.get()
+                && bannerWhisperEnabled()
                 && (!localSend || ChatBubbleConfig.OWN_WHISPER_NOTIFY.get())) {
             effectObserver.onWhisperReceived(senderUUID, senderName, content, messages.size());
         }
 
         // System messages pop as a banner like @/whisper/quote (no sender name —
         // the system label is enough, avoiding "[系统] 系统"). Independent toggle,
-        // on by default.
-        if (isSystem && ChatBubbleConfig.SYSTEM_BANNER_ENABLED.get()) {
+        // off by default; the server can force it on (bannerSystemEnabled).
+        if (isSystem && bannerSystemEnabled()) {
             effectObserver.onSystemMessage(content, messages.size());
         }
 

@@ -16,6 +16,12 @@ public class ChatServerConfig {
     public static final ForgeConfigSpec.BooleanValue TEMPLATE_DEBUG;
     public static final ForgeConfigSpec.BooleanValue MEDIA_ENABLED;
     public static final ForgeConfigSpec.BooleanValue MEDIA_AUTO_CLEAN;
+    /** 顶部消息横幅（@提及/引用）服务端开关：默认关闭，设置后优先级高于客户端设置 */
+    public static final ForgeConfigSpec.BooleanValue BANNER_MENTION_ENABLED;
+    /** 顶部消息横幅（私聊）服务端开关 */
+    public static final ForgeConfigSpec.BooleanValue BANNER_WHISPER_ENABLED;
+    /** 顶部消息横幅（系统消息）服务端开关 */
+    public static final ForgeConfigSpec.BooleanValue BANNER_SYSTEM_ENABLED;
 
     static {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
@@ -43,6 +49,20 @@ public class ChatServerConfig {
                         "Auto-delete server-hosted media files older than 7 days (checked on server start, then at most every 6h after uploads)",
                         "When false, uploaded images are kept forever")
                 .define("media_auto_clean", true);
+
+        builder.push("banner");
+        BANNER_MENTION_ENABLED = builder.comment(
+                        "Show the top notification banner for @mentions/quotes to all players.",
+                        "Default off (the client default is also off); when set here, this OVERRIDES the client setting")
+                .define("mention_enabled", false);
+        BANNER_WHISPER_ENABLED = builder.comment(
+                        "Show the top notification banner for private/whisper messages to all players. Default off; overrides the client setting")
+                .define("whisper_enabled", false);
+        BANNER_SYSTEM_ENABLED = builder.comment(
+                        "Show the top notification banner for system messages (deaths/joins/broadcasts). Default off; overrides the client setting")
+                .define("system_enabled", false);
+        builder.pop();
+
         SERVER_CONFIG = builder.build();
     }
 }

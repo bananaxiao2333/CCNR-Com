@@ -263,13 +263,16 @@ public class ChatBubbleConfig {
         builder.push("mention");
 
         MENTION_BANNER_ENABLED = builder.comment(
-                        "Show a notification banner when you are @mentioned (phone-style slide-in)")
+                        "Show a notification banner when you are @mentioned (phone-style slide-in).",
+                        "Off by default (top banners are intrusive); the server can force it on via e33chat-server.toml")
                 .translation("e33chat.config.mention_banner_enabled")
-                .define("banner_enabled", true);
+                .define("banner_enabled", false);
 
-        SYSTEM_BANNER_ENABLED = builder.comment("Pop a banner for system messages (deaths/joins/broadcasts).")
+        SYSTEM_BANNER_ENABLED = builder.comment(
+                        "Pop a banner for system messages (deaths/joins/broadcasts). Off by default;",
+                        "the server can force it on via e33chat-server.toml")
                 .translation("e33chat.config.system_banner_enabled")
-                .define("system_banner_enabled", true);
+                .define("system_banner_enabled", false);
 
         MENTION_BANNER_DURATION = builder.comment("How long the notification banner stays visible (seconds, 2-10)")
                 .translation("e33chat.config.mention_banner_duration")
@@ -284,9 +287,11 @@ public class ChatBubbleConfig {
                 .translation("e33chat.config.mention_require_at")
                 .define("require_at", true);
 
-        MENTION_WHISPER_BANNER = builder.comment("Show a notification banner for incoming private / whisper messages")
+        MENTION_WHISPER_BANNER = builder.comment(
+                        "Show a notification banner for incoming private / whisper messages. Off by default;",
+                        "the server can force it on via e33chat-server.toml")
                 .translation("e33chat.config.mention_whisper_banner")
-                .define("whisper_banner", true);
+                .define("whisper_banner", false);
 
         OWN_MENTION_NOTIFY = builder.comment("Notify (sound + banner) when you @ yourself — testing aid")
                 .translation("e33chat.config.own_mention_notify")

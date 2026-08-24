@@ -11,6 +11,7 @@
 - 基础设施：JUnit5 单元测试（40 用例）、Spotless 格式检查 + MIT 头、CI 自动跑测试
 - **修复**：补全英文语言包 `en_us.json`（缺失 58 个键，与 zh_cn 全量对齐），英文客户端侧边栏/对讲面板/命令不再显示红色原始翻译键；新增语言包键位一致性回归测试 `LangFileTest`
 - **致谢**：气泡对话界面部分代码/风格借鉴 [E33Chat](https://github.com/E33EPUS/E33Chat)（MIT），感谢 [@E33EPUS](https://github.com/E33EPUS) 的开源分享
+- **顶部消息横幅默认关闭**：@提及/引用/私聊/系统横幅不再默认弹出（`e33chat-client.toml` 三个开关默认 false）；新增服务端 `e33chat-server.toml` `[banner]` 配置（`mention_enabled`/`whisper_enabled`/`system_enabled`，默认 false）并在登录时同步——**服务端配置优先**，覆盖玩家客户端开关
 
 ## [1.0.0] - 首个正式版
 

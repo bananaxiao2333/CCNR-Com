@@ -77,6 +77,13 @@
 | hud | `hudColor` | 1F6EFF | 背景基础颜色（RRGGBB，音量越高越饱和） |
 | hud | `hudMinAlpha` | 0.25 | 背景最小透明度（0~1，音量越高越高） |
 
+## 顶部消息横幅（默认关闭）
+
+@提及 / 引用 / 私聊 / 系统消息的屏幕顶部通知横幅默认**关闭**，不会再挡住视野：
+
+- 客户端：`config/e33chat/e33chat-client.toml` 的 `banner_enabled`、`whisper_banner`、`system_banner_enabled` 默认均为 `false`，可单独打开。
+- 服务端：`serverconfig/e33chat-server.toml` 的 `[banner]` 下 `mention_enabled` / `whisper_enabled` / `system_enabled`（默认 `false`）。**服务端配置优先**：一旦设置，直接覆盖所有玩家的客户端开关（无需玩家改配置）。
+
 ## 构建
 
 GitHub Actions 已配置自动构建（`push main` / 打 `v*` 标签 / PR），产物自动上传；

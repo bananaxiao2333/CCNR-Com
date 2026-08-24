@@ -169,7 +169,10 @@ public class MentionNotificationBanner {
     }
 
     public void render(GuiGraphics g, int screenW, int screenH) {
-        if (!ChatBubbleConfig.MENTION_BANNER_ENABLED.get()) return;
+        // 总闸：任一来源（@提及/私聊/系统）允许才绘制（服务端配置优先）
+        if (!ChatMessageStore.bannerMentionEnabled()
+                && !ChatMessageStore.bannerWhisperEnabled()
+                && !ChatMessageStore.bannerSystemEnabled()) return;
         if (banners.isEmpty() && exiting.isEmpty()) return;
 
         Minecraft mc = Minecraft.getInstance();
