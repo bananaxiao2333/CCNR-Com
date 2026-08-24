@@ -1,274 +1,274 @@
-[248月2026 15:26:19.448] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.451] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.451] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.457] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.458] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.458] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.463] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.463] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.464] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.474] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.474] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.475] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.523] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.524] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.524] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.527] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.528] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.528] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.529] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.530] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.530] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.536] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.537] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.537] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.543] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.543] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.543] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.546] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.546] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.547] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.550] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.550] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.550] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.552] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.553] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.553] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.556] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.556] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.556] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.559] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.559] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.559] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.562] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.562] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.562] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.564] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.565] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.565] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.567] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.568] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.568] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.570] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.571] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.571] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.573] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.574] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.574] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.577] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.577] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.578] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.583] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.583] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.583] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.586] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.587] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.587] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.590] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.590] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.591] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.593] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.593] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.593] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.595] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.595] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.595] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.596] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.596] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.597] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.654] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.654] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.655] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.658] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.658] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.659] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.661] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.662] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.662] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.664] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.664] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.664] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.665] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.666] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.666] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.667] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.667] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.667] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.671] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.671] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.671] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.673] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.673] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.674] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.676] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.676] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.676] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.679] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.679] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.680] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.681] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.681] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.681] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.684] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.684] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.684] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.687] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.688] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.688] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.690] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.691] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.691] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.692] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.692] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.692] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.693] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.694] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.694] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.695] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.696] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.696] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.698] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.698] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.698] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.700] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.700] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.700] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.702] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.702] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.702] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.704] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.704] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.705] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.708] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.708] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.708] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.710] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.711] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.711] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.712] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.712] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.713] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.716] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.716] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.716] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.719] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.719] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.720] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.722] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.722] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.722] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.725] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.725] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.725] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.727] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.727] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.727] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.730] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.731] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.731] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.732] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.733] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.733] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.734] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.735] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.735] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.737] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.737] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.737] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.739] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.740] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.740] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.741] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.742] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.742] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.745] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.745] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.745] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.748] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.748] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.748] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.749] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.749] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.750] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.751] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.751] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.752] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.754] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.755] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.756] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.759] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.760] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.761] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.765] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.765] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.765] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.767] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.767] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.767] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.769] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.770] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.770] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.773] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.773] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.773] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.778] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.778] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.778] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.780] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.780] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.781] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.782] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.783] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.783] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.785] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.785] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.785] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.787] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.787] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.787] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.789] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.789] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.790] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.792] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.792] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.792] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.796] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.796] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.796] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.798] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.799] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.799] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.800] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.800] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.801] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.802] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.802] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.802] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.803] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.804] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.804] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.807] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.807] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.807] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.808] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.809] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.809] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.812] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.812] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.812] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
-[248月2026 15:26:19.860] [Test worker/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
-[248月2026 15:26:19.863] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
-[248月2026 15:26:19.863] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
-[248月2026 15:26:19.882] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
-[248月2026 15:26:19.882] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 21
-[248月2026 15:26:19.884] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
-[248月2026 15:26:19.885] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
-[248月2026 15:26:19.885] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
-[248月2026 15:26:19.886] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
-[248月2026 15:26:19.887] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
+[248月2026 15:39:39.653] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.656] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.657] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.663] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.663] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.664] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.669] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.669] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.670] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.679] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.680] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.680] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.725] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.726] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.726] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.730] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.730] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.731] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.733] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.733] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.734] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.740] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.741] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.741] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.744] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.744] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.744] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.747] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.747] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.747] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.749] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.750] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.750] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.752] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.752] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.753] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.755] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.755] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.755] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.758] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.758] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.758] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.760] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.760] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.761] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.763] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.765] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.766] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.766] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.768] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.768] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.769] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.771] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.771] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.771] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.773] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.774] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.774] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.780] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.780] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.780] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.782] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.783] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.783] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.784] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.784] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.784] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.786] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.786] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.787] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.788] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.789] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.789] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.790] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.791] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.791] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.953] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.953] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.953] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.961] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.962] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.962] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.966] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.966] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.966] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.969] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.969] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.969] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.970] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.971] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.971] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.975] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.976] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.976] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.979] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.981] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.981] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.998] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.998] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:39.998] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.013] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.014] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.014] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.019] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.019] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.019] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.022] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.022] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.022] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.025] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.025] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.025] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.028] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.028] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.028] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.031] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.031] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.031] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.034] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.034] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.035] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.036] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.036] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.036] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.040] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.041] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.041] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.046] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.048] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.048] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.052] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.052] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.052] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.058] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.059] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.060] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.065] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.065] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.065] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.068] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.068] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.068] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.072] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.072] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.072] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.078] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.079] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.079] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.083] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.087] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.091] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.092] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.092] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.093] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.094] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.094] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.095] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.096] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.097] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.097] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.110] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.112] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.115] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.126] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.126] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.126] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.130] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.130] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.130] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.132] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.132] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.132] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.133] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.133] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.133] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.138] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.143] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.143] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.145] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.147] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.147] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.149] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.149] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.150] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.151] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.151] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.151] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.151] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.152] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.152] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.152] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.153] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.153] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.153] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.153] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.153] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.154] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.154] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.154] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.155] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.155] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.155] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.156] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.156] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.156] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.157] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.157] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.157] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.158] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.158] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.158] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.158] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.159] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.159] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.159] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.159] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.159] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.160] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.160] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.160] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.161] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.161] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.161] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.163] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.163] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.163] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.164] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.164] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.164] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.165] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.165] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.165] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.166] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.166] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.166] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.167] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.167] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.167] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.168] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.169] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.169] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.171] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.171] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.172] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.173] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.173] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.174] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.177] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.178] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.185] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.192] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.193] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.193] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.199] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.199] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.199] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.201] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key sidebar_hide_patterns is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.202] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key blocked_players is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.202] [Test worker/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: List on key phrases is deemed to need correction, as it is null or not a list.
+[248月2026 15:39:40.243] [Test worker/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[248月2026 15:39:40.245] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[248月2026 15:39:40.245] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[248月2026 15:39:40.257] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[248月2026 15:39:40.257] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 21
+[248月2026 15:39:40.258] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[248月2026 15:39:40.258] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
+[248月2026 15:39:40.259] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[248月2026 15:39:40.259] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
+[248月2026 15:39:40.259] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
 java.lang.NoSuchMethodException: java.nio.DirectByteBuffer.<init>(long,int)
 	at java.lang.Class.getConstructor0(Class.java:3763) ~[?:?]
 	at java.lang.Class.getDeclaredConstructor(Class.java:2932) ~[?:?]
@@ -361,8 +361,8 @@ java.lang.NoSuchMethodException: java.nio.DirectByteBuffer.<init>(long,int)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[?:?]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:?]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:?]
-[248月2026 15:26:19.901] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
-[248月2026 15:26:19.904] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+[248月2026 15:39:40.266] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[248月2026 15:39:40.266] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @355ce81c
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:714) ~[?:?]
@@ -456,33 +456,33 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[?:?]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:?]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:?]
-[248月2026 15:26:19.913] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[248月2026 15:26:19.914] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
-[248月2026 15:26:19.915] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 536870912 bytes (maybe)
-[248月2026 15:26:19.915] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: /var/folders/qt/swqn7crd6pxbg5cktzy7ffsh0000gn/T (java.io.tmpdir)
-[248月2026 15:26:19.916] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[248月2026 15:26:19.916] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: MacOS
-[248月2026 15:26:19.917] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
-[248月2026 15:26:19.917] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[248月2026 15:26:19.918] [Test worker/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
-[248月2026 15:26:19.918] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
-[248月2026 15:26:19.926] [Test worker/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkAccessible: true
-[248月2026 15:26:19.927] [Test worker/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkBounds: true
-[248月2026 15:26:19.927] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetectorFactory/]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4c6007fb
-[248月2026 15:26:19.941] [Test worker/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[248月2026 15:26:19.941] [Test worker/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[248月2026 15:26:19.946] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numHeapArenas: 20
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numDirectArenas: 20
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.pageSize: 8192
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxOrder: 9
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.chunkSize: 4194304
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.smallCacheSize: 256
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.normalCacheSize: 64
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimInterval: 8192
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.useCacheForAllThreads: false
-[248月2026 15:26:19.947] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[248月2026 15:26:19.957] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.allocator.type: pooled
-[248月2026 15:26:19.957] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.threadLocalDirectBufferSize: 0
-[248月2026 15:26:19.958] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[248月2026 15:39:40.269] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[248月2026 15:39:40.269] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 536870912 bytes (maybe)
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: /var/folders/qt/swqn7crd6pxbg5cktzy7ffsh0000gn/T (java.io.tmpdir)
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: MacOS
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[248月2026 15:39:40.270] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[248月2026 15:39:40.271] [Test worker/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[248月2026 15:39:40.271] [Test worker/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[248月2026 15:39:40.276] [Test worker/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkAccessible: true
+[248月2026 15:39:40.276] [Test worker/DEBUG] [io.netty.buffer.AbstractByteBuf/]: -Dio.netty.buffer.checkBounds: true
+[248月2026 15:39:40.276] [Test worker/DEBUG] [io.netty.util.ResourceLeakDetectorFactory/]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4c6007fb
+[248月2026 15:39:40.286] [Test worker/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[248月2026 15:39:40.286] [Test worker/DEBUG] [io.netty.util.internal.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[248月2026 15:39:40.288] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numHeapArenas: 20
+[248月2026 15:39:40.288] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.numDirectArenas: 20
+[248月2026 15:39:40.288] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.pageSize: 8192
+[248月2026 15:39:40.288] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxOrder: 9
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.chunkSize: 4194304
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.smallCacheSize: 256
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.normalCacheSize: 64
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimInterval: 8192
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.useCacheForAllThreads: false
+[248月2026 15:39:40.289] [Test worker/DEBUG] [io.netty.buffer.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[248月2026 15:39:40.294] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.allocator.type: pooled
+[248月2026 15:39:40.294] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.threadLocalDirectBufferSize: 0
+[248月2026 15:39:40.294] [Test worker/DEBUG] [io.netty.buffer.ByteBufUtil/]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
