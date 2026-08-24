@@ -9,6 +9,8 @@
 - **主题**：light/dark 两套色板，auto 跟随游戏深色选项，/ccnr theme 切换
 - 消息双写本地存储（按频道分桶、上限、搜索），渲染用 SDF 圆角 shader
 - 基础设施：JUnit5 单元测试（40 用例）、Spotless 格式检查 + MIT 头、CI 自动跑测试
+- **修复**：补全英文语言包 `en_us.json`（缺失 58 个键，与 zh_cn 全量对齐），英文客户端侧边栏/对讲面板/命令不再显示红色原始翻译键；新增语言包键位一致性回归测试 `LangFileTest`
+- **致谢**：气泡对话界面部分代码/风格借鉴 [E33Chat](https://github.com/E33EPUS/E33Chat)（MIT），感谢 [@E33EPUS](https://github.com/E33EPUS) 的开源分享
 
 ## [1.0.0] - 首个正式版
 
