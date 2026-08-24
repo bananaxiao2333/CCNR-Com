@@ -177,10 +177,8 @@ public final class ChatSidebar {
                 String label = allLabels.get(i);
                 if (scrollY + ITEM_H > startY && scrollY < visibleBottom) {
                     boolean sel = target.equals(whisperPartner);
-                    boolean active =
-                            target.equals("*admin") || target.equals("*ooc") || target.equalsIgnoreCase(myChannel);
                     boolean hoverRow =
-                            active && mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
+                            mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
                     if (sel)
                         com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
                                 g, UiTextureManager.rl(UiElement.SIDEBAR_SELECTED), 0, scrollY, WIDTH, ITEM_H, alpha);

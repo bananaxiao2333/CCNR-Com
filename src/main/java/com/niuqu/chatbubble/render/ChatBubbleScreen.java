@@ -875,6 +875,7 @@ public class ChatBubbleScreen extends ChatScreen {
             int y = searchY + searchH + 3;
             if (mouseY >= y && mouseY <= y + 22) {
                 whisperPartner = null;
+                input.setEditable(true);
                 sidebarSearchBox.setValue("");
                 setFocused(input);
                 scrollToBottom = true;
@@ -892,10 +893,10 @@ public class ChatBubbleScreen extends ChatScreen {
                                 .getString()
                         : target;
                 if (!filter.isEmpty() && !label.toLowerCase().contains(filter)) continue;
-                // 非活跃对讲频道（与当前设定不一致）不可选、无法发送
-                if (!target.startsWith("*") && !target.equalsIgnoreCase(myChannel)) continue;
                 if (mouseY >= scrollY && mouseY <= scrollY + 22) {
                     whisperPartner = target;
+                    // 非活跃对讲频道：只能查看，输入框只读
+                    input.setEditable(target.startsWith("*") || target.equalsIgnoreCase(myChannel));
                     sidebarSearchBox.setValue("");
                     setFocused(input);
                     scrollToBottom = true;
@@ -1411,6 +1412,7 @@ public class ChatBubbleScreen extends ChatScreen {
                 return;
             }
             whisperPartner = name;
+            input.setEditable(true);
             ChatMessageStore.clearUnreadWhisper(name);
             if (sidebarSearchBox != null) sidebarSearchBox.setValue("");
             setFocused(input);
