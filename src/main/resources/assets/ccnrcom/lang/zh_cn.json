@@ -58,5 +58,10 @@
   "ccnrcom.config.voice_hud": "语音 HUD",
   "ccnrcom.config.history": "历史上限",
   "ccnrcom.config.beep": "收到提示音",
-  "ccnrcom.config.actionbar": "ActionBar 反馈"
+  "ccnrcom.config.actionbar": "ActionBar 反馈",
+  "ccnrcom.gui.channel.admin": "管理",
+  "ccnrcom.gui.channel.ooc": "场外",
+  "ccnrcom.gui.channel.prefix": "对讲",
+  "ccnrcom.broadcast.sent": "已向 %s 广播（%s 人收到）",
+  "ccnrcom.chat.whisper_disabled": "私聊仅限创造模式或旁观者模式使用"
 }

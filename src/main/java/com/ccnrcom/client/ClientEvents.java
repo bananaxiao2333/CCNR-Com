@@ -19,6 +19,7 @@ import net.minecraftforge.client.event.RegisterShadersEvent;
 import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
@@ -89,6 +90,16 @@ public class ClientEvents {
         Minecraft mc = Minecraft.getInstance();
         if (ClientKeybinds.CHAT_KEY != null && ClientKeybinds.CHAT_KEY.consumeClick() && mc.screen == null) {
             mc.setScreen(new CommsChatScreen());
+        }
+    }
+
+    /** 本地玩家死亡：清除自己发出的对讲机通讯记录 */
+    @SubscribeEvent
+    public static void onPlayerDeath(LivingDeathEvent event) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player != null && event.getEntity() == mc.player) {
+            com.ccnrcom.gui.store.CommsMessageStore.get()
+                    .removeSenderOfType(mc.player.getUUID(), com.ccnrcom.chat.CommsMessage.Type.RADIO);
         }
     }
 
