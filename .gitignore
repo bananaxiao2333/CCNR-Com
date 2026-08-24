@@ -19,3 +19,4 @@ release/
 
 # macOS
 .DS_Store
+logs/
