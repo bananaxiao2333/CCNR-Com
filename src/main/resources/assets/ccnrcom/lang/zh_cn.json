@@ -63,5 +63,6 @@
   "ccnrcom.gui.channel.ooc": "场外",
   "ccnrcom.gui.channel.prefix": "对讲",
   "ccnrcom.broadcast.sent": "已向 %s 广播（%s 人收到）",
-  "ccnrcom.chat.whisper_disabled": "私聊仅限创造模式或旁观者模式使用"
+  "ccnrcom.chat.whisper_disabled": "私聊仅限创造模式或旁观者模式使用",
+  "ccnrcom.chat.channel_inactive": "该频道未激活（当前频道 %s），无法发送"
 }
