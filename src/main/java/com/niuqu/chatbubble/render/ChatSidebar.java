@@ -4,7 +4,6 @@
  */
 package com.niuqu.chatbubble.render;
 
-import com.niuqu.chatbubble.config.ChatBubbleConfig;
 import com.niuqu.chatbubble.store.ChatMessageStore;
 import com.niuqu.chatbubble.texture.UiElement;
 import com.niuqu.chatbubble.texture.UiTextureManager;
@@ -134,101 +133,84 @@ public final class ChatSidebar {
         y += ITEM_H + 2;
 
         int newMaxScroll = prevMaxScroll;
-        if (mc.player != null && mc.player.connection != null) {
-            var players = new ArrayList<>(mc.player.connection.getOnlinePlayers());
-            String selfName = mc.player.getName().getString();
-            String filter = searchBox.getValue().toLowerCase().trim();
-
-            int startY = y;
-            int visibleBottom = msgBottom > 0 ? msgBottom : 300;
-            int totalH = 0;
-            for (var info : players) {
-                String name = info.getProfile().getName();
-                if (name.equals(selfName)) continue;
-                if (ChatBubbleConfig.isSidebarHidden(name)) continue;
-                if (!filter.isEmpty() && !name.toLowerCase().contains(filter)) continue;
-                totalH += ITEM_H + 2;
+        // ===== CCNR-Com 适配：侧边栏显示通讯频道（管理/场外/对讲频道），点击即切换发送目标 =====
+        String[] fixedTargets = {"*admin", "*ooc"};
+        String[] fixedLabels = {
+            Component.translatable("ccnrcom.gui.channel.admin").getString(),
+            Component.translatable("ccnrcom.gui.channel.ooc").getString()
+        };
+        java.util.List<String> channels =
+                com.ccnrcom.gui.store.CommsMessageStore.get().knownChannels();
+        String filter = searchBox.getValue().toLowerCase().trim();
+        int startY = y;
+        int visibleBottom = msgBottom > 0 ? msgBottom : 300;
+        java.util.List<String> allTargets = new java.util.ArrayList<>();
+        java.util.List<String> allLabels = new java.util.ArrayList<>();
+        for (int i = 0; i < fixedTargets.length; i++) {
+            if (filter.isEmpty() || fixedLabels[i].toLowerCase().contains(filter)) {
+                allTargets.add(fixedTargets[i]);
+                allLabels.add(fixedLabels[i]);
             }
+        }
+        for (String ch : channels) {
+            if (filter.isEmpty() || ch.toLowerCase().contains(filter)) {
+                allTargets.add(ch);
+                allLabels.add(
+                        Component.translatable("ccnrcom.gui.channel.prefix").getString() + " " + ch);
+            }
+        }
+        int totalH = allTargets.size() * (ITEM_H + 2);
+        if (totalH == 0) {
+            drawIcon(g, noOnlineIcon, (WIDTH - 32) / 2, startY + 8, 32, alpha);
+            String noPlayers =
+                    Component.translatable("e33chat.sidebar.no_players").getString();
+            int textW = font.width(noPlayers);
+            g.drawString(
+                    font, Component.literal(noPlayers), (WIDTH - textW) / 2, startY + 8 + 32 + 4, c.textMuted(), false);
+        } else {
+            newMaxScroll = Math.max(0, totalH - (visibleBottom - startY));
+            int clampedOffset = Math.min(scrollOffset, newMaxScroll);
+            g.enableScissor(0, startY, WIDTH, visibleBottom);
+            int scrollY = startY - clampedOffset;
+            for (int i = 0; i < allTargets.size(); i++) {
+                String target = allTargets.get(i);
+                String label = allLabels.get(i);
+                if (scrollY + ITEM_H > startY && scrollY < visibleBottom) {
+                    boolean sel = target.equals(whisperPartner);
+                    boolean hoverRow =
+                            mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
+                    if (sel)
+                        com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
+                                g, UiTextureManager.rl(UiElement.SIDEBAR_SELECTED), 0, scrollY, WIDTH, ITEM_H, alpha);
+                    else if (hoverRow)
+                        com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
+                                g, UiTextureManager.rl(UiElement.SIDEBAR_HOVER), 0, scrollY, WIDTH, ITEM_H, alpha);
 
-            if (totalH == 0) {
-                drawIcon(g, noOnlineIcon, (WIDTH - 32) / 2, startY + 8, 32, alpha);
-                String noPlayers =
-                        Component.translatable("e33chat.sidebar.no_players").getString();
-                int textW = font.width(noPlayers);
-                g.drawString(
-                        font,
-                        Component.literal(noPlayers),
-                        (WIDTH - textW) / 2,
-                        startY + 8 + 32 + 4,
-                        c.textMuted(),
-                        false);
-            } else {
-                newMaxScroll = Math.max(0, totalH - (visibleBottom - startY));
-                // Clamp so a shrinking player list can't leave the view scrolled
-                // into empty space until the next scroll input (parity with NeoForge)
-                int clampedOffset = Math.min(scrollOffset, newMaxScroll);
+                    drawIcon(g, publicIcon, 2, scrollY + 1, ICON_S, alpha);
+                    int maxNameW = WIDTH - nameX - 4 - 2;
+                    String displayName = font.plainSubstrByWidth(label, maxNameW - font.width("..."));
+                    if (!displayName.equals(label)) displayName += "...";
+                    int labelColor =
+                            target.equals("*admin") ? 0xFFFF5252 : target.equals("*ooc") ? 0xFFB0BEC5 : c.textPrimary();
+                    g.drawString(font, Component.literal(displayName), nameX, scrollY + 1, labelColor, false);
 
-                g.enableScissor(0, startY, WIDTH, visibleBottom);
-                int scrollY = startY - clampedOffset;
-                for (var info : players) {
-                    String name = info.getProfile().getName();
-                    if (name.equals(selfName)) continue;
-                    if (ChatBubbleConfig.isSidebarHidden(name)) continue;
-                    if (!filter.isEmpty() && !name.toLowerCase().contains(filter)) continue;
-
-                    if (scrollY + ITEM_H > startY && scrollY < visibleBottom) {
-                        boolean sel = name.equals(whisperPartner);
-                        boolean hoverRow =
-                                mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
-                        if (sel)
-                            com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
-                                    g,
-                                    UiTextureManager.rl(UiElement.SIDEBAR_SELECTED),
-                                    0,
-                                    scrollY,
-                                    WIDTH,
-                                    ITEM_H,
-                                    alpha);
-                        else if (hoverRow)
-                            com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
-                                    g, UiTextureManager.rl(UiElement.SIDEBAR_HOVER), 0, scrollY, WIDTH, ITEM_H, alpha);
-
-                        ResourceLocation skin =
-                                SkinResolver.getSkin(info.getProfile().getId(), name);
-                        drawPlayerHead(g, skin, 4, scrollY + 3, 16, 18, alpha);
-
-                        int tipW = ChatMessageStore.hasUnreadWhisper(name) ? 16 : 0;
-                        int maxNameW = WIDTH - nameX - 4 - tipW - 2;
-                        String displayName = font.plainSubstrByWidth(name, maxNameW - font.width("..."));
-                        if (!displayName.equals(name)) displayName += "...";
-                        g.drawString(font, Component.literal(displayName), nameX, scrollY + 1, c.textPrimary(), false);
-
-                        ChatMessageStore.ChatMessage latest = ChatMessageStore.getLatestWhisperWith(name);
-                        if (latest != null) {
-                            String preview =
-                                    ChatMessageStore.singleLine(latest.content().getString());
-                            String previewDisplay = font.plainSubstrByWidth(preview, maxNameW - font.width("..."));
-                            if (!previewDisplay.equals(preview)) previewDisplay += "...";
-                            g.drawString(
-                                    font,
-                                    Component.literal(previewDisplay),
-                                    nameX,
-                                    scrollY + 1 + font.lineHeight,
-                                    c.textMuted(),
-                                    false);
-                        }
-
-                        if (ChatMessageStore.hasUnreadWhisper(name)) {
-                            int tipX = WIDTH - 16 - 2;
-                            double wave = Math.abs(Math.sin(System.currentTimeMillis() / 300.0)) * 3;
-                            int tipY = scrollY + 3 + (int) wave;
-                            drawIcon(g, privateTipIcon, tipX, tipY, 16, alpha);
-                        }
+                    // 该频道最新消息预览
+                    String preview = latestPreviewFor(target);
+                    if (!preview.isEmpty()) {
+                        String previewDisplay = font.plainSubstrByWidth(preview, maxNameW - font.width("..."));
+                        if (!previewDisplay.equals(preview)) previewDisplay += "...";
+                        g.drawString(
+                                font,
+                                Component.literal(previewDisplay),
+                                nameX,
+                                scrollY + 1 + font.lineHeight,
+                                c.textMuted(),
+                                false);
                     }
-                    scrollY += ITEM_H + 2;
                 }
-                g.disableScissor();
+                scrollY += ITEM_H + 2;
             }
+            g.disableScissor();
         }
         return newMaxScroll;
     }
