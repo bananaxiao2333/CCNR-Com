@@ -11,6 +11,8 @@ import com.ccnrcom.network.ChannelStatePacket;
 import com.ccnrcom.network.CommsChatPacket;
 import com.ccnrcom.network.RadioReceivePacket;
 import com.ccnrcom.network.VoiceFeedbackPacket;
+import com.niuqu.chatbubble.store.ChatMessageStore;
+import com.niuqu.chatbubble.store.ChatMessageStore.SenderMeta;
 import java.util.UUID;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
@@ -80,14 +82,36 @@ public class ClientPacketHandler {
         UUID senderId = resolveSenderId(msg.getSender());
         if (msg.getType() == CommsChatPacket.TYPE_ADMIN) {
             CommsMessageStore.get().add(CommsMessage.admin(senderId, msg.getSender(), msg.getMessage()));
+            ChatMessageStore.setPendingMeta(new SenderMeta(
+                    senderId,
+                    net.minecraft.network.chat.Component.literal(msg.getSender())
+                            .withStyle(net.minecraft.ChatFormatting.RED),
+                    net.minecraft.network.chat.Component.literal(msg.getMessage())
+                            .withStyle(net.minecraft.ChatFormatting.GREEN),
+                    false,
+                    msg.getSender(),
+                    false,
+                    null));
         } else {
             CommsMessageStore.get().add(CommsMessage.ooc(senderId, msg.getSender(), msg.getMessage()));
+            ChatMessageStore.setPendingMeta(new SenderMeta(
+                    senderId,
+                    net.minecraft.network.chat.Component.translatable("ccnrcom.ooc.prefix")
+                            .withStyle(net.minecraft.ChatFormatting.GRAY)
+                            .append(net.minecraft.network.chat.Component.literal(msg.getSender() + ": ")
+                                    .withStyle(net.minecraft.ChatFormatting.YELLOW)),
+                    net.minecraft.network.chat.Component.literal(msg.getMessage()),
+                    false,
+                    msg.getSender(),
+                    false,
+                    null));
         }
     }
 
     /** 频道成员状态更新 */
     public static void handleChannelState(ChannelStatePacket msg) {
         ClientChannelState.setState(msg.getMyChannel(), new java.util.LinkedHashMap<>(msg.getMembers()));
+        CommsMessageStore.get().rememberChannel(msg.getMyChannel());
     }
 
     /** 根据玩家名找 UUID（仅本地显示用，找不到就随机） */

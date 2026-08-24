@@ -77,6 +77,16 @@ public class ModCommands {
         dispatcher.register(adminCmd);
         dispatcher.register(Commands.literal("admin").redirect(adminCmd.build()));
 
+        // /ccnrsend <channel|admin|ooc> <消息> 服务端广播（OP）
+        dispatcher.register(Commands.literal("ccnrsend")
+                .requires(src -> src.hasPermission(2))
+                .then(Commands.argument("target", StringArgumentType.word())
+                        .then(Commands.argument("message", StringArgumentType.greedyString())
+                                .executes(ctx -> serverBroadcast(
+                                        ctx.getSource(),
+                                        StringArgumentType.getString(ctx, "target"),
+                                        StringArgumentType.getString(ctx, "message"))))));
+
         // /o <消息> 场外通讯（所有人都能收到，无视距离）
         LiteralArgumentBuilder<CommandSourceStack> oocCmd = Commands.literal("o")
                 .then(Commands.argument("message", StringArgumentType.greedyString())
@@ -156,6 +166,29 @@ public class ModCommands {
                     && p.distanceToSqr(player) > (double) range * (double) range) continue;
             CCNRComMod.CHANNEL.send(PacketDistributor.PLAYER.with(() -> p), packet);
         }
+        return 1;
+    }
+
+    /** 服务端广播：/ccnrsend <channel|admin|ooc> <message> */
+    private static int serverBroadcast(CommandSourceStack source, String target, String message) {
+        String trimmed = validateMessage(source, message);
+        if (trimmed == null) return 0;
+        int sent;
+        if (target.equalsIgnoreCase("admin")) {
+            sent = CommsBroadcast.admin(source.getServer(), trimmed);
+        } else if (target.equalsIgnoreCase("ooc")) {
+            sent = CommsBroadcast.ooc(source.getServer(), trimmed);
+        } else {
+            if (!ChannelManager.isValid(target)) {
+                source.sendFailure(Component.translatable("ccnrcom.channel.invalid"));
+                return 0;
+            }
+            sent = CommsBroadcast.radio(source.getServer(), target, trimmed);
+        }
+        source.sendSuccess(
+                () -> Component.translatable("ccnrcom.broadcast.sent", target, sent)
+                        .withStyle(ChatFormatting.GREEN),
+                false);
         return 1;
     }
 

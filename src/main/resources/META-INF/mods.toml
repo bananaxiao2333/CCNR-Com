@@ -43,3 +43,24 @@ description='''CCNR-Com 对讲机模组 (Forge 1.20.1)
     versionRange="[2.1.0,3.0.0)"
     ordering="NONE"
     side="BOTH"
+
+[[mods]]
+modId="e33chat"
+version="${file.jarVersion}"
+displayName="E33Chat"
+mixinConfigs="mixins.e33chat.json"
+description='''聊天 APP 风格 GUI（内嵌）：气泡与头像、私聊侧边栏、搜索、表情与常用语、引用回复、通知横幅、本地聊天记录与设置界面。'''
+
+[[dependencies.e33chat]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.e33chat]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

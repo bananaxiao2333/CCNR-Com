@@ -24,6 +24,7 @@ public final class CommsMessageStore {
     private static final CommsMessageStore INSTANCE = new CommsMessageStore(100);
 
     private final Map<String, Deque<CommsMessage>> buckets = new HashMap<>();
+    private final java.util.Set<String> rememberedChannels = new java.util.LinkedHashSet<>();
     private int maxPerBucket;
 
     public CommsMessageStore(int maxPerBucket) {
@@ -96,13 +97,28 @@ public final class CommsMessageStore {
         return out;
     }
 
-    /** 已知对讲频道（有消息记录的） */
+    /** 已知对讲频道（有消息记录或显式加入的） */
     public synchronized List<String> knownChannels() {
-        return buckets.keySet().stream()
-                .filter(k -> k.startsWith("r:"))
-                .map(k -> k.substring(2))
-                .distinct()
-                .sorted()
-                .toList();
+        java.util.Set<String> out = new java.util.LinkedHashSet<>(rememberedChannels);
+        for (String k : buckets.keySet()) {
+            if (k.startsWith("r:")) out.add(k.substring(2));
+        }
+        return out.stream().sorted().toList();
+    }
+
+    /** 记住一个频道（进频道时调用，即使还没有消息也显示在侧边栏） */
+    public synchronized void rememberChannel(String channel) {
+        if (channel != null && !channel.isEmpty()) {
+            rememberedChannels.add(channel);
+        }
+    }
+
+    /** 删除某玩家指定类型的消息（如死亡后清除对讲机记录） */
+    public synchronized int removeSenderOfType(java.util.UUID senderId, CommsMessage.Type type) {
+        int removed = 0;
+        for (Deque<CommsMessage> bucket : buckets.values()) {
+            bucket.removeIf(m -> m.getType() == type && senderId.equals(m.getSenderId()));
+        }
+        return removed;
     }
 }
