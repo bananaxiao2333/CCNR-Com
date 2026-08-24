@@ -17,6 +17,14 @@ import net.minecraft.resources.ResourceLocation;
 
 public final class ChatSidebar {
 
+    // CCNR-Com：频道图标
+    private static final net.minecraft.resources.ResourceLocation ICON_ADMIN =
+            new net.minecraft.resources.ResourceLocation("ccnrcom", "textures/gui/icon_admin.png");
+    private static final net.minecraft.resources.ResourceLocation ICON_OOC =
+            new net.minecraft.resources.ResourceLocation("ccnrcom", "textures/gui/icon_ooc.png");
+    private static final net.minecraft.resources.ResourceLocation ICON_RADIO =
+            new net.minecraft.resources.ResourceLocation("ccnrcom", "textures/gui/icon_radio.png");
+
     public static final int WIDTH = 90;
     private static final int ITEM_H = 22;
     private static final int ICON_S = 20;
@@ -169,8 +177,10 @@ public final class ChatSidebar {
                 String label = allLabels.get(i);
                 if (scrollY + ITEM_H > startY && scrollY < visibleBottom) {
                     boolean sel = target.equals(whisperPartner);
+                    boolean active =
+                            target.equals("*admin") || target.equals("*ooc") || target.equalsIgnoreCase(myChannel);
                     boolean hoverRow =
-                            mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
+                            active && mouseX >= 0 && mouseX <= WIDTH && mouseY >= scrollY && mouseY <= scrollY + ITEM_H;
                     if (sel)
                         com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
                                 g, UiTextureManager.rl(UiElement.SIDEBAR_SELECTED), 0, scrollY, WIDTH, ITEM_H, alpha);
@@ -178,7 +188,13 @@ public final class ChatSidebar {
                         com.niuqu.chatbubble.texture.ColoredTextureRenderer.drawWithAlpha(
                                 g, UiTextureManager.rl(UiElement.SIDEBAR_HOVER), 0, scrollY, WIDTH, ITEM_H, alpha);
 
-                    drawIcon(g, publicIcon, 2, scrollY + 1, ICON_S, alpha);
+                    drawIcon(
+                            g,
+                            target.equals("*admin") ? ICON_ADMIN : target.equals("*ooc") ? ICON_OOC : ICON_RADIO,
+                            2,
+                            scrollY + 1,
+                            ICON_S,
+                            alpha);
                     int maxNameW = WIDTH - nameX - 4 - 2;
                     String displayName = font.plainSubstrByWidth(label, maxNameW - font.width("..."));
                     if (!displayName.equals(label)) displayName += "...";

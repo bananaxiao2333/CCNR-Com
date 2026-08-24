@@ -884,6 +884,7 @@ public class ChatBubbleScreen extends ChatScreen {
             // CCNR-Com 适配：频道目标（管理/场外/对讲频道，活跃在前）
             java.util.List<String> targets = com.niuqu.chatbubble.render.ChatSidebar.channelList();
             String filter = sidebarSearchBox.getValue().toLowerCase().trim();
+            String myChannel = com.ccnrcom.client.ClientChannelState.getMyChannel();
             int scrollY = y - sidebarScrollOffset;
             for (String target : targets) {
                 String label = target.startsWith("*")
@@ -891,6 +892,8 @@ public class ChatBubbleScreen extends ChatScreen {
                                 .getString()
                         : target;
                 if (!filter.isEmpty() && !label.toLowerCase().contains(filter)) continue;
+                // 非活跃对讲频道（与当前设定不一致）不可选、无法发送
+                if (!target.startsWith("*") && !target.equalsIgnoreCase(myChannel)) continue;
                 if (mouseY >= scrollY && mouseY <= scrollY + 22) {
                     whisperPartner = target;
                     sidebarSearchBox.setValue("");
@@ -2483,6 +2486,15 @@ public class ChatBubbleScreen extends ChatScreen {
             } else if (whisperPartner.equals("*ooc")) {
                 text = "/o " + text;
             } else if (isChannelTarget(whisperPartner)) {
+                if (!whisperPartner.equalsIgnoreCase(com.ccnrcom.client.ClientChannelState.getMyChannel())) {
+                    minecraft
+                            .gui
+                            .getChat()
+                            .addMessage(Component.translatable(
+                                    "ccnrcom.chat.channel_inactive",
+                                    com.ccnrcom.client.ClientChannelState.getMyChannel()));
+                    return;
+                }
                 text = "/r " + text;
             } else {
                 if (!canWhisper()) {
