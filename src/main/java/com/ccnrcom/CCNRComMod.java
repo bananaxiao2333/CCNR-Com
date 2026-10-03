@@ -4,7 +4,6 @@
  */
 package com.ccnrcom;
 
-import com.ccnrcom.client.ClientKeybinds;
 import com.ccnrcom.compat.PlasmoVoiceCompat;
 import com.ccnrcom.gui.store.CommsMessageStore;
 import com.ccnrcom.network.ChannelStatePacket;
@@ -49,7 +48,6 @@ public class CCNRComMod {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         modBus.addListener(this::commonSetup);
         modBus.addListener(this::clientSetup);
-        modBus.addListener(ClientKeybinds::register);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(ModCommands::register);

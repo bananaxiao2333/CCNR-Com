@@ -34,29 +34,14 @@ class LangFileTest {
             "ccnrcom.hud.radio",
             "ccnrcom.hud.on",
             "ccnrcom.hud.off",
-            "ccnrcom.gui.title",
             "ccnrcom.gui.channel.admin",
             "ccnrcom.gui.channel.ooc",
             "ccnrcom.gui.channel.prefix",
             "ccnrcom.gui.radio_bubble_name",
-            "ccnrcom.gui.channel.current",
-            "ccnrcom.gui.channel.hint",
-            "ccnrcom.gui.channel.set",
-            "ccnrcom.gui.menu.copy",
-            "ccnrcom.gui.menu.block",
-            "ccnrcom.gui.menu.unblock",
-            "ccnrcom.gui.menu.switch_channel",
-            "ccnrcom.config.title",
-            "ccnrcom.config.bubble_chat",
-            "ccnrcom.config.voice_hud",
-            "ccnrcom.gui.no_messages",
-            "ccnrcom.gui.no_members",
             "ccnrcom.theme.usage",
             "ccnrcom.theme.changed",
             "ccnrcom.chat.channel_inactive",
-            "ccnrcom.broadcast.sent",
-            "key.ccnrcom.chat",
-            "key.categories.ccnrcom");
+            "ccnrcom.broadcast.sent");
 
     private static Map<String, String> load(String path) {
         InputStream in = LangFileTest.class.getResourceAsStream(path);
