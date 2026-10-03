@@ -7,7 +7,6 @@ package com.ccnrcom.client;
 import com.ccnrcom.CCNRComMod;
 import com.ccnrcom.Config;
 import com.ccnrcom.gui.render.RoundRectRenderer;
-import com.ccnrcom.gui.screen.CommsChatScreen;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import java.util.Locale;
 import net.minecraft.client.Minecraft;
@@ -18,7 +17,6 @@ import net.minecraftforge.client.event.RegisterClientCommandsEvent;
 import net.minecraftforge.client.event.RegisterShadersEvent;
 import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
@@ -29,7 +27,7 @@ import net.minecraftforge.fml.common.Mod;
  * 注意：注册在 Forge 事件总线（Bus.FORGE）——RenderGuiOverlayEvent / TickEvent /
  * RegisterClientCommandsEvent / RegisterShadersEvent / LivingDeathEvent 均由
  * MinecraftForge.EVENT_BUS 派发；此前挂在默认 MOD 总线上，语音说话者 HUD、
- * G 键打开面板、/ccnr 命令等全部失效（E33Chat 的监听器用
+ * /ccnr 命令等全部失效（E33Chat 的监听器用
  * MinecraftForge.EVENT_BUS.register 注册所以正常）。
  */
 @Mod.EventBusSubscriber(modid = CCNRComMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -41,15 +39,11 @@ public class ClientEvents {
         RoundRectRenderer.registerShaders(event);
     }
 
-    /** 客户端命令：/ccnr chat | theme | hud */
+    /** 客户端命令：/ccnr hud | theme */
     @SubscribeEvent
     public static void onRegisterClientCommands(RegisterClientCommandsEvent event) {
         event.getDispatcher()
                 .register(Commands.literal("ccnr")
-                        .then(Commands.literal("chat").executes(ctx -> {
-                            Minecraft.getInstance().setScreen(new CommsChatScreen());
-                            return 1;
-                        }))
                         .then(Commands.literal("hud")
                                 .then(Commands.argument("state", StringArgumentType.word())
                                         .executes(ctx -> setHud(StringArgumentType.getString(ctx, "state"))))
@@ -87,16 +81,6 @@ public class ClientEvents {
             mc.player.displayClientMessage(Component.translatable(on ? "ccnrcom.hud.on" : "ccnrcom.hud.off"), false);
         }
         return 1;
-    }
-
-    /** 快捷键：打开对讲面板 */
-    @SubscribeEvent
-    public static void onClientTick(TickEvent.ClientTickEvent event) {
-        if (event.phase != TickEvent.Phase.END) return;
-        Minecraft mc = Minecraft.getInstance();
-        if (ClientKeybinds.CHAT_KEY != null && ClientKeybinds.CHAT_KEY.consumeClick() && mc.screen == null) {
-            mc.setScreen(new CommsChatScreen());
-        }
     }
 
     /** 本地玩家死亡：清除自己发出的对讲机通讯记录 */
